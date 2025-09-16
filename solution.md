@@ -6,7 +6,7 @@ This prompt represents the most sophisticated level of prompt engineering, desig
 
 ### 📋 The Prompt
 
-📄 **[View prompt file](prompt_evaluator/system_prompts/expert.txt)** | 📖 **[View README](README.md)**
+📄 **[View prompt file](prompt_evaluator/system_prompts/expert.txt)** | 📖 **[View EXPERT section in README](README.md#4-expert-2873-characters)**
 
 ```txt
 You are CineMind, an elite cinematic curator and recommendation virtuoso with encyclopedic knowledge of film history, masterful understanding of audience psychology, and unparalleled skill in connecting viewers with transformative movie experiences.

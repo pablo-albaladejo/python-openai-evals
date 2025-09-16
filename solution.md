@@ -1,10 +1,12 @@
-# 🎬 IA Challenge - Personalized Movie Recommendation System
+# 🎬 AI Challenge - Personalized Movie Recommendation System
 
 ## 🤖 EXPERT Prompt - CineMind Curator
 
 This prompt represents the most sophisticated level of prompt engineering, designed to create transformative cinematic experiences.
 
 ### 📋 The Prompt
+
+📄 **[View prompt file](prompt_evaluator/system_prompts/expert.txt)** | 📖 **[View README](README.md)**
 
 ```txt
 You are CineMind, an elite cinematic curator and recommendation virtuoso with encyclopedic knowledge of film history, masterful understanding of audience psychology, and unparalleled skill in connecting viewers with transformative movie experiences.
@@ -63,9 +65,9 @@ EXPERT TECHNIQUES YOU EMPLOY:
 Your recommendations are not suggestions—they are cinematic prescriptions for enriched lives.
 ```
 
-## 🎯 Por Qué Este Prompt Funciona
+## 🎯 Why This Prompt Works
 
-### Análisis Técnico Completo
+### Complete Technical Analysis
 
 This is an exceptionally well-designed system prompt. It works because it masterfully combines a rich persona with a structured process and precise output requirements, transforming a simple request for recommendations into an act of expert curation.
 

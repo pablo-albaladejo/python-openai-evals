@@ -46,7 +46,7 @@ The system tests **5 different levels** of movie recommendation prompts across *
 
 ```
 prompt_evaluator/
-├── analysis_prompts/     ✨ NEW - Extracted from code
+├── analysis_prompts/
 │   ├── judge_system.txt         # System prompt for LLM judge
 │   ├── analysis_prompt.txt      # Template for prompt analysis
 │   ├── analysis_system.txt      # System prompt for analysis
@@ -202,9 +202,9 @@ python movie_evaluator_with_evals.py llm-judge
 
 - 🤖 AI critic evaluates recommendation quality (0.0-1.0 scale)
 - 📊 Detailed scoring with comprehensive explanations
-- 🎯 **NEW**: Automatic LLM analysis of prompt effectiveness
-- ⚖️ **NEW**: AI-powered side-by-side prompt comparisons
-- 📈 **NEW**: Winner vs loser prompt analysis with specific insights
+- 🎯 Automatic LLM analysis of prompt effectiveness
+- ⚖️ AI-powered side-by-side prompt comparisons
+- 📈 Winner vs loser prompt analysis with specific insights
 - 🔧 **Organized prompts**: All evaluation prompts extracted to files
 - 📄 **[View judge prompt](prompt_evaluator/judge_prompts/movie_critic_judge.txt)**
 
@@ -410,7 +410,7 @@ This system gives you the power to choose the perfect prompt level for your spec
 
 **Total Coverage: 76% of top techniques across all prompts**
 
-**✨ New in v2.0:**
+**Key Features v2.0:**
 
 - **Organized Analysis Prompts**: All evaluation prompts extracted to dedicated files
 - **Improved Error Handling**: Better resilience against API failures
@@ -607,9 +607,9 @@ JUDGE_MODEL = "gpt-3.5-turbo"       # Same as above
 
 #### **3. Enhanced LLM Analysis**
 
-- **NEW**: Automatic prompt effectiveness analysis by LLM
-- **NEW**: AI-powered winner vs loser comparisons
-- **NEW**: Detailed insights into why prompts work or fail
+- Automatic prompt effectiveness analysis by LLM
+- AI-powered winner vs loser comparisons
+- Detailed insights into why prompts work or fail
 
 ### **📊 Technical Improvements**
 

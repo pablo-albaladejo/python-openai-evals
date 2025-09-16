@@ -1,0 +1,56 @@
+{
+  "name": "Translation Dataset",
+  "description": "Dataset de prueba para evaluación de prompts de traducción inglés-español",
+  "data": [
+    {
+      "input": "Hello, how are you doing today?",
+      "expected": "Hola, ¿cómo estás hoy?",
+      "category": "greeting"
+    },
+    {
+      "input": "The weather is beautiful today.",
+      "expected": "El clima está hermoso hoy.",
+      "category": "weather"
+    },
+    {
+      "input": "I need to go to the store to buy groceries.",
+      "expected": "Necesito ir a la tienda a comprar comestibles.",
+      "category": "daily_activities"
+    },
+    {
+      "input": "Can you help me with this problem?",
+      "expected": "¿Puedes ayudarme con este problema?",
+      "category": "request"
+    },
+    {
+      "input": "The meeting is scheduled for 3 PM tomorrow.",
+      "expected": "La reunión está programada para las 3 PM mañana.",
+      "category": "business"
+    },
+    {
+      "input": "I love reading books in my free time.",
+      "expected": "Me encanta leer libros en mi tiempo libre.",
+      "category": "hobbies"
+    },
+    {
+      "input": "The technology industry is rapidly evolving.",
+      "expected": "La industria tecnológica está evolucionando rápidamente.",
+      "category": "technology"
+    },
+    {
+      "input": "Please send me the report by email.",
+      "expected": "Por favor envíame el informe por correo electrónico.",
+      "category": "business"
+    },
+    {
+      "input": "My favorite color is blue.",
+      "expected": "Mi color favorito es azul.",
+      "category": "personal"
+    },
+    {
+      "input": "The restaurant serves delicious Italian food.",
+      "expected": "El restaurante sirve deliciosa comida italiana.",
+      "category": "food"
+    }
+  ]
+}

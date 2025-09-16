@@ -1,0 +1,59 @@
+name: "Ejemplo de Evaluación de Prompts"
+description: "Evaluación comparativa de diferentes versiones de prompts para traducción"
+
+# Versiones de prompts a evaluar
+prompt_versions:
+  - name: "traductor_basico"
+    description: "Prompt básico para traducción"
+    template: "Traduce el siguiente texto del inglés al español: {{ input }}"
+    variables: ["input"]
+
+  - name: "traductor_contextual"
+    description: "Prompt con más contexto y instrucciones específicas"
+    template: |
+      Eres un traductor profesional del inglés al español.
+      Tu tarea es traducir el siguiente texto manteniendo el tono y el significado original.
+
+      Texto a traducir: {{ input }}
+
+      Traducción:
+    variables: ["input"]
+
+  - name: "traductor_experto"
+    description: "Prompt más detallado con ejemplos"
+    template: |
+      Actúa como un traductor experto del inglés al español. Sigue estas reglas:
+      1. Mantén el tono y registro del texto original
+      2. Usa vocabulario apropiado para el contexto
+      3. Asegúrate de que la traducción suene natural en español
+
+      Ejemplo:
+      Inglés: "Hello, how are you?"
+      Español: "Hola, ¿cómo estás?"
+
+      Ahora traduce:
+      Inglés: "{{ input }}"
+      Español:
+    variables: ["input"]
+
+# Ruta al dataset de evaluación
+dataset_path: "prompt_evaluator/examples/translation_dataset.json"
+
+# Evaluadores a usar
+evaluators:
+  - "similarity"
+  - "contains"
+
+# Métricas a calcular
+metrics:
+  - "average_score"
+  - "success_rate"
+  - "consistency"
+
+# Configuración del modelo OpenAI
+openai_model: "gpt-3.5-turbo"
+max_tokens: 150
+temperature: 0.3
+
+# Directorio de salida
+output_dir: "results"

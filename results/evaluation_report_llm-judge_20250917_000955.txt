@@ -1,0 +1,619 @@
+🤖 Using LLM-AS-JUDGE evaluation with OpenAI API
+🎯 One model generates recommendations, another model judges quality
+
+🤖 LLM-AS-JUDGE EVALUATION
+======================================================================
+🎯 Using one model to generate recommendations, another to judge quality
+
+
+📝 USER INPUT 1: I like romantic comedies and 90s movies
+------------------------------------------------------------
+
+🔄 System prompt: DETAILED
+  📄 Generated response: {
+  "movies": [
+    {
+      "title": "10 Things I Hate About You",
+      "genre": "Romantic Comedy",
+      "reason": "This beloved 90s teen romantic comedy captures the witty humor and heartfelt romance characteristic of that era, making it perfect for someone who appreciates nostalgic 90s films with a charming love story."
+    },
+    {
+      "title": "While You Were Sleeping",
+      "genre": "Romantic Comedy",
+      "reason": "A classic 90s romantic comedy with a warm, feel-good vibe, featuring memorable performances and a delightful mix of humor and romance that aligns well with your tastes."
+    },
+    {
+      "title": "Clueless",
+      "genre": "Romantic Comedy",
+      "reason": "This iconic 90s film blends sharp humor and romantic escapades set in a stylish high school environment, capturing the fun, light-hearted spirit of 90s romantic comedies you enjoy."
+    }
+  ]
+}
+  ⏱️  Response time: 3.14s
+  🤖 Judge evaluation: 0.75
+  📝 Detailed reasoning: The recommendations are all relevant to the user's stated preferences—romantic comedies from the 90s—and the explanations are generally accurate, highlighting the nostalgic and humorous qualities of each film. "10 Things I Hate About You," "While You Were Sleeping," and "Clueless" are indeed quintessential 90s romantic comedies that exemplify the era's charm, humor, and romantic themes, demonstrating a decent understanding of the user's taste. The reasons mention specific elements such as wit, warmth, and style, which are appropriate and show some effort at personalization.
+
+However, the reasoning remains somewhat superficial and formulaic, lacking deeper insights into what makes these films exemplary or how they uniquely cater to nuanced preferences. For instance, the explanations do not delve into the specific filmmaking styles, cultural impact, or how these movies compare to other 90s rom-coms in terms of tone or character development. They also miss an opportunity to connect the films beyond surface-level genre and era, such as discussing the screenplay craftsmanship, performances, or how these movies reflect 90s societal attitudes, which would demonstrate a more profound film expertise.
+
+Furthermore, while the recommendations are all relevant, they are somewhat predictable choices—these are well-known staples of the genre and era, and the explanations do not show any creative or unexpected connections that would elevate the recommendation quality. The JSON structure is correct, and all three movies are included as requested, but the reasoning lacks depth and originality.
+
+In sum, the recommendations are appropriate and well-matched but do not demonstrate the level of insight, nuance, or creativity expected for a higher score. They are solid but not exceptional, warranting a score of 0.75.
+--------------------------------------------------------------------------------
+
+🔄 System prompt: BASIC
+  📄 Generated response: {
+  "movies": [
+    {
+      "title": "Notting Hill",
+      "genre": "Romantic Comedy",
+      "reason": "A charming and witty romantic comedy set in the 90s with memorable performances by Julia Roberts and Hugh Grant."
+    },
+    {
+      "title": "10 Things I Hate About You",
+      "genre": "Romantic Comedy",
+      "reason": "A classic 90s teen romantic comedy with clever humor and a nostalgic feel that captures the era perfectly."
+    },
+    {
+      "title": "Clueless",
+      "genre": "Romantic Comedy",
+      "reason": "A quintessential 90s film with sharp humor, memorable characters, and a fun, light-hearted take on teen romance."
+    }
+  ]
+}
+  ⏱️  Response time: 3.17s
+  🤖 Judge evaluation: 0.65
+  📝 Detailed reasoning: The recommendations are all relevant in genre and era, aligning with the user's stated preferences for romantic comedies and 90s movies. Each film is a well-known representative of the 90s romantic comedy genre, and the explanations correctly identify their nostalgic and comedic qualities. However, the reasoning remains superficial and somewhat generic, lacking deeper insight into what makes these films particularly suited to the user's nuanced tastes. For example, "Notting Hill" is described merely as charming and witty with memorable performances, but it doesn't specify whether the user prefers Hugh Grant's particular style, the film's British sensibility, or its blend of humor and heartfelt moments. Similarly, "10 Things I Hate About You" is labeled as a classic with clever humor, but the explanation misses an opportunity to connect its teen romance themes or its modern adaptation of Shakespeare, which could appeal to a user interested in nuanced 90s romantic comedies. "Clueless" is rightly identified as quintessential, but the reasoning doesn't explore its cultural impact, sharp dialogue, or how its fashion and social commentary might resonate with a user seeking depth beyond surface-level nostalgia. The JSON structure is correct, and all three movies are appropriate choices, but the explanations lack the depth, specificity, and film expertise that would elevate this recommendation set to a higher score. Overall, it’s a solid but unremarkable set of suggestions that could be improved with more personalized, insightful reasoning.
+--------------------------------------------------------------------------------
+
+🔄 System prompt: EXPERT
+  📄 Generated response: {
+  "movies": [
+    {
+      "title": "Notting Hill (1999)",
+      "genre": "Romantic Comedy + 90s Cultural Charm",
+      "reason": "This film captures the quintessential charm and wit of 90s rom-coms, blending heartfelt humor with an endearing love story set against the vibrant backdrop of London. It offers a gentle exploration of fame, vulnerability, and serendipity that feels timeless yet distinctly of its era, inviting you into a world where love is both hilarious and profoundly genuine."
+    },
+    {
+      "title": "Clueless (1995)",
+      "genre": "Teen Comedy + Satirical Social Commentary",
+      "reason": "Clueless is a playful, stylish dive into 90s teenage life, infused with clever wordplay and a keen sense of social satire. It’s a delightful reflection on youth, identity, and self-discovery wrapped in a colorful, iconic aesthetic that transforms the typical teen comedy into a culturally influential piece, revealing the era’s unique blend of innocence and irony."
+    },
+    {
+      "title": "Before Sunrise (1994)",
+      "genre": "Romantic Drama + Philosophical Conversation",
+      "reason": "This film elevates the romantic comedy spirit into a poetic exploration of fleeting connections and meaningful dialogue, capturing the magic of spontaneous love and deep human connection. Its intimate, dialogue-driven narrative offers a more contemplative, emotionally resonant experience that complements the lightheartedness of your preferred genre while adding depth and introspection."
+    }
+  ]
+}
+  ⏱️  Response time: 23.13s
+  🤖 Judge evaluation: 0.75
+  📝 Detailed reasoning: The recommendations demonstrate a solid understanding of the user's stated preferences—romantic comedies and 90s movies—and the selected films are generally relevant within those parameters. "Notting Hill" is a quintessential 90s rom-com that captures the era’s charm, wit, and emotional warmth, aligning well with the user’s taste. "Clueless" is an iconic 90s teen comedy that, while more satirical and youth-oriented, still fits within the broader romantic comedy spectrum, especially given its cultural significance and lighthearted tone. "Before Sunrise," although more of a romantic drama with philosophical dialogue, offers a nuanced, mature take on romantic connection that complements the lighter rom-coms, adding depth and variety to the recommendations.
+
+However, the reasoning, while insightful, tends to be somewhat superficial and somewhat generic. The explanation for "Notting Hill" emphasizes its charm and setting but doesn't delve deeply into its nuanced portrayal of vulnerability or its clever subversion of rom-com tropes. The "Clueless" reasoning highlights its cultural impact and aesthetic but misses an opportunity to connect more specifically to the user’s love for humor and romance, perhaps by emphasizing its witty dialogue or character development. The "Before Sunrise" reasoning is more sophisticated, recognizing its contemplative nature and emotional depth, which is a positive aspect, but it slightly diverges from the typical lightheartedness of classic rom-coms, making its inclusion somewhat less aligned with the core genre preference.
+
+Furthermore, the JSON structure is correct, and all three movies are relevant, but the explanations lack a certain depth of film knowledge and personalized insight that would elevate this recommendation to an outstanding level. The recommendations are good but not exceptional—they lean toward surface-level associations rather than nuanced, expert-level connections. They also do not explore more unexpected or creative matches that could surprise and delight a discerning viewer.
+
+In sum, this set of recommendations is relevant and well-chosen but falls short of the deep, insightful reasoning and personalized nuance required for a higher score. It’s a strong, above-average effort but not quite at the level of outstanding or perfect.
+--------------------------------------------------------------------------------
+
+🔄 System prompt: CONTEXTUAL
+  📄 Generated response: {
+  "movies": [
+    {
+      "title": "Notting Hill",
+      "genre": "Romantic Comedy",
+      "reason": "This charming 90s classic perfectly captures the magic of unexpected love with witty dialogue and heartfelt moments, making it a delightful pick for any romantic comedy fan!"
+    },
+    {
+      "title": "10 Things I Hate About You",
+      "genre": "Teen Romantic Comedy",
+      "reason": "A 90s teen favorite that combines sharp humor, memorable performances, and a timeless story about love and self-discovery—it's an energetic and fun ride through high school romance!"
+    },
+    {
+      "title": "While You Were Sleeping",
+      "genre": "Romantic Comedy",
+      "reason": "This sweet and funny film from the 90s offers warm, endearing characters and a charming story about love, family, and second chances—perfect if you're looking for feel-good romance!"
+    }
+  ]
+}
+  ⏱️  Response time: 21.94s
+  🤖 Judge evaluation: 0.65
+  📝 Detailed reasoning: This set of recommendations demonstrates a basic understanding of the user’s preferences—namely, romantic comedies and 90s movies—but falls short of a truly insightful or nuanced match. All three films are indeed from the 90s and fit broadly within the romantic comedy genre, which aligns with the user's stated interests. However, the reasoning provided is superficial and somewhat generic, lacking depth and specific film knowledge that would elevate these suggestions beyond surface-level associations. For example, "Notting Hill" is a quintessential 90s romantic comedy, but the explanation reduces it to "witty dialogue and heartfelt moments" without exploring its unique narrative style, character development, or how it exemplifies the era's romantic comedy tropes. Similarly, "10 Things I Hate About You" is a teen rom-com, but the recommendation misses an opportunity to discuss its clever adaptation of Shakespearean themes or its influence on 90s teen cinema, which would demonstrate a deeper understanding. "While You Were Sleeping" is a charming choice, yet the reasoning is generic, not delving into its specific tone, character arcs, or how it exemplifies 90s romantic comedy conventions. Overall, the recommendations are relevant but lack the personalized, insightful reasoning that would justify a higher score. They feel like standard suggestions rather than carefully curated, expert-level picks that reflect a nuanced grasp of the genre and era.
+--------------------------------------------------------------------------------
+
+🔄 System prompt: CREATIVE
+  📄 Generated response: {
+  "movies": [
+    {
+      "title": "Before Sunrise (1995) - A poetic exploration of fleeting connections and the magic of spontaneous intimacy",
+      "genre": "Romantic Drama + Philosophical Introspection",
+      "reason": "This film captures the ephemeral beauty of a chance encounter, weaving dialogue and longing into a tapestry that echoes the carefree spirit of 90s romance. It serves as a poetic gateway, inviting you to see love as a transient art form, much like the playful unpredictability of classic romantic comedies."
+    },
+    {
+      "title": "Reality Bites (1994) - A poignant yet humorous reflection on Generation X's quest for meaning amidst chaos",
+      "genre": "Comedy-Drama + Cultural Satire",
+      "reason": "In its paradoxical blend of cynicism and hope, Reality Bites echoes the 90s zeitgeist, expanding the emotional universe introduced by Before Sunrise. It challenges conventions of love and success while resonating with the youthful rebellion and heartfelt sincerity that define your nostalgic landscape."
+    },
+    {
+      "title": "10 Things I Hate About You (1999) - A vibrant, rebellious ode to teenage romance and societal masks",
+      "genre": "Teen Romantic Comedy + Shakespearean Subversion",
+      "reason": "This film synthesizes the playful energy of 90s rom-coms with a sharp wit and layered characters, amplifying the emotional resonance of the previous films through its spirited irreverence. It culminates the trilogy with a celebration of authentic connection amidst societal expectations, leaving a lasting impression of love’s resilience and humor."
+    }
+  ]
+}
+  ⏱️  Response time: 22.59s
+  🤖 Judge evaluation: 0.65
+  📝 Detailed reasoning: The recommendations demonstrate a commendable effort to align with the user’s stated preferences—romantic comedies and 90s movies—yet fall short of the highest standards of nuanced understanding and insightful reasoning. The first film, *Before Sunrise* (1995), is a beautifully crafted romantic drama that captures fleeting intimacy and poetic dialogue, which aligns well with a taste for romantic storytelling. However, it is more introspective and philosophical than a typical romantic comedy, and the reasoning conflates poetic romance with comedy, which is a superficial connection at best. While it does evoke the ephemeral and spontaneous qualities of 90s romance, it lacks a clear emphasis on humor or comedic elements, making the recommendation somewhat tangential.
+
+*Reality Bites* (1994) is a quintessential 90s film that resonates with Generation X’s cultural mood, blending humor, cynicism, and emotional depth. Its inclusion is relevant, and the reasoning shows some understanding of the 90s zeitgeist and the emotional universe of the era. However, it is primarily a comedy-drama with satirical elements rather than a romantic comedy, and the explanation overstates its connection to romantic comedy tropes. The film’s focus on cultural reflection and existential themes, while interesting, does not directly serve as a strong recommendation for someone seeking lighthearted romantic comedies, making the relevance somewhat superficial.
+
+*10 Things I Hate About You* (1999) is a more fitting choice, being a quintessential 90s teen romantic comedy with sharp wit and layered characters. The reasoning correctly emphasizes its energy, humor, and emotional resonance, aligning well with the user’s preferences. Nonetheless, the explanation could be more specific about how its comedic style and character dynamics directly match the user’s taste, rather than broadly describing it as a “celebration of authentic connection.” It’s a solid pick, but the reasoning remains somewhat generic and lacks deeper filmic insight.
+
+Overall, the recommendations are relevant but lack the depth, specificity, and nuanced understanding that would elevate them to an outstanding or perfect score. They show some effort at personalization but tend to rely on broad associations rather than detailed, insightful connections rooted in film knowledge. The JSON structure is correct, and all fields are present, but the explanations could be more precise and tailored. Given the strict criteria, I find this set to be a decent but not exceptional match, warranting a score of 0.65.
+--------------------------------------------------------------------------------
+
+📝 USER INPUT 2: I prefer science fiction and psychological thrillers
+------------------------------------------------------------
+
+🔄 System prompt: DETAILED
+  📄 Generated response: {
+  "movies": [
+    {
+      "title": "Blade Runner 2049",
+      "genre": "Science Fiction",
+      "reason": "This film offers a visually stunning exploration of identity and consciousness, perfect for someone who appreciates the depth of psychological thrillers combined with a compelling sci-fi setting."
+    },
+    {
+      "title": "Ex Machina",
+      "genre": "Science Fiction",
+      "reason": "A tightly woven narrative that delves into artificial intelligence and human psyche, resonating with your interest in psychological complexity within a futuristic context."
+    },
+    {
+      "title": "Shutter Island",
+      "genre": "Psychological Thriller",
+      "reason": "While not sci-fi, this movie provides a gripping psychological experience with twists and an intense atmosphere, appealing to your preference for mind-bending thrillers."
+    }
+  ]
+}
+  ⏱️  Response time: 21.63s
+  🤖 Judge evaluation: 0.55
+  📝 Detailed reasoning: This recommendation set demonstrates a superficial understanding of the user's preferences, with some relevant choices but lacking in depth and nuanced insight. "Blade Runner 2049" is an excellent match, combining high-quality sci-fi with themes of identity and consciousness, aligning well with the user's interest in psychological aspects within science fiction. "Ex Machina" similarly fits well, offering a tight narrative exploring AI and human psyche, which shows some awareness of the user's desire for psychological complexity in sci-fi. However, the reasoning provided is somewhat generic, lacking specific references to the film's nuanced exploration of consciousness or its philosophical underpinnings, which would elevate the recommendation.
+
+The inclusion of "Shutter Island" is where the recommendation falters significantly. While it is a psychological thriller, it is not a sci-fi film, and the reasoning dismisses this mismatch with a vague mention of "not sci-fi" but then justifies it based on atmospheric qualities. This indicates a shallow understanding of the importance of genre fidelity and the user's explicit preference for science fiction. The reasoning does not convincingly explain why a non-sci-fi thriller would be a suitable substitute, nor does it demonstrate deep film knowledge or personalized insight.
+
+Overall, the recommendations are relevant but lack the depth, specificity, and nuanced understanding expected of a top-tier recommendation. The explanations are somewhat generic, and the genre mismatch with "Shutter Island" diminishes the overall quality. The JSON structure is correct, but the reasoning does not demonstrate a sophisticated grasp of the user's preferences or the films' thematic richness. Therefore, this set earns a modest score, reflecting some relevance but insufficient depth and personalization.
+--------------------------------------------------------------------------------
+
+🔄 System prompt: BASIC
+  📄 Generated response: {
+  "movies": [
+    {
+      "title": "Blade Runner 2049",
+      "genre": "Science Fiction",
+      "reason": "A visually stunning sci-fi that explores identity and consciousness, perfect for fans of psychological depth."
+    },
+    {
+      "title": "Inception",
+      "genre": "Psychological Thriller",
+      "reason": "A mind-bending thriller that delves into dreams and reality, blending psychological complexity with thrilling action."
+    },
+    {
+      "title": "Ex Machina",
+      "genre": "Science Fiction / Psychological Thriller",
+      "reason": "An intense exploration of artificial intelligence and human psyche, ideal for those interested in the mind and tech."
+    }
+  ]
+}
+  ⏱️  Response time: 22.75s
+  🤖 Judge evaluation: 0.65
+  📝 Detailed reasoning: This recommendation set demonstrates a basic understanding of the user's preferences—namely, science fiction and psychological thrillers—and includes three well-known films within those genres. The movies selected—*Blade Runner 2049*, *Inception*, and *Ex Machina*—are indeed relevant and generally considered high-quality examples of their respective genres, which aligns with the user's stated interests. The explanations, while somewhat generic, do touch upon thematic elements such as identity, consciousness, dreams, and AI, which are pertinent to both genres and suggest some effort at personalization.
+
+However, the reasoning lacks depth and nuance. For instance, describing *Blade Runner 2049* solely as "visually stunning" and "exploring identity and consciousness" is a surface-level observation that many sci-fi films share. It does not demonstrate a deeper understanding of the film's philosophical underpinnings or its specific appeal to someone interested in psychological complexity. Similarly, *Inception* is characterized as "mind-bending" with "psychological complexity," but the explanation misses the film's unique narrative structure, its exploration of guilt and perception, or its innovative use of dream layers—elements that would show a more sophisticated grasp of why it appeals to a psychologically inclined viewer. *Ex Machina* is described as "an intense exploration of AI and human psyche," which is accurate but again superficial; a more insightful critique would mention its focus on manipulation, consciousness, and the ethical dilemmas surrounding AI, which are central to its psychological depth.
+
+The JSON structure is correct, and all three movies are relevant choices, but the explanations do not go beyond generic praise or broad thematic summaries. There is no evidence of deep film knowledge, creative insight, or personalized tailoring to nuanced preferences. The recommendations feel like standard genre picks rather than carefully curated suggestions that reflect a sophisticated understanding of the user's specific tastes.
+
+In sum, while the recommendations are relevant and reasonably justified, they lack the depth, specificity, and insight expected of a top-tier, personalized film critique. Therefore, I assign a score of 0.65, recognizing the relevance but noting the superficiality of reasoning and the absence of nuanced understanding.
+--------------------------------------------------------------------------------
+
+🔄 System prompt: EXPERT
+  📄 Generated response: {
+  "movies": [
+    {
+      "title": "Blade Runner (1982)",
+      "genre": "Science Fiction + Cyberpunk Noir",
+      "reason": "This film immerses you in a dystopian future where identity and humanity are questioned amidst a haunting visual landscape. It's a perfect starting point for exploring complex psychological themes layered within a richly imagined sci-fi universe, setting the tone for a journey into the mind's depths."
+    },
+    {
+      "title": "Ex Machina (2014)",
+      "genre": "Psychological Thriller + Artificial Intelligence",
+      "reason": "Building on the introspective and philosophical questions raised earlier, 'Ex Machina' delves into the nature of consciousness and manipulation, challenging perceptions of reality and control. Its intimate, tension-filled narrative offers a masterclass in psychological suspense that will leave you questioning what is truly human."
+    },
+    {
+      "title": "Altered States (1980)",
+      "genre": "Psychological Sci-Fi + Experimental Drama",
+      "reason": "This film completes the trilogy by exploring the boundaries of perception, consciousness, and transformation through experimental science. Its visceral, mind-bending portrayal of inner exploration creates a compelling emotional arc, encouraging reflection on the fragile line between mind and matter, and culminating in a profound, transformative experience."
+    }
+  ]
+}
+  ⏱️  Response time: 2.24s
+  🤖 Judge evaluation: 0.85
+  📝 Detailed reasoning: This recommendation set demonstrates a commendable understanding of the user's preferences for science fiction and psychological thrillers, with each film aligning well within those genres and themes. "Blade Runner" is an iconic choice, exemplifying dystopian sci-fi with profound psychological undercurrents about identity and humanity, and the reasoning captures its thematic depth and visual style effectively. "Ex Machina" is a contemporary, critically acclaimed psychological thriller that probes consciousness, manipulation, and AI—core interests for a user seeking psychological and sci-fi intersections—while the explanation emphasizes its philosophical and suspenseful qualities, showing film knowledge beyond surface-level plot points. "Altered States" is a more experimental, less mainstream pick, fitting the psychological sci-fi niche and adding depth to the trilogy by exploring perception and consciousness in visceral ways; the reasoning appropriately highlights its mind-bending and emotional aspects.
+
+However, the recommendations could be improved in a few areas. The explanations, while insightful, tend to be somewhat generic and could benefit from more specific references to film techniques, narrative nuances, or thematic subtleties that distinguish these movies as exemplary matches. For instance, mentioning how "Blade Runner" explores the nature of memory and the use of noir aesthetics, or how "Ex Machina" employs minimalistic dialogue and confined settings to heighten psychological tension, would demonstrate deeper film expertise. Additionally, the inclusion of "Altered States," while interesting, is somewhat less directly aligned with the user's core preferences—it's more experimental and less mainstream, which might not be as universally appealing or as clearly connected to the psychological thriller aspect as the first two films.
+
+The JSON structure is correct, with all three movies included and reasons provided, fulfilling the structural criteria. The recommendations are relevant and show effort to personalize, but the explanations lack the depth and specificity that would elevate this to an outstanding level. Overall, this set is very good—well above average but not quite reaching the highest echelons of personalized, insightful recommendations.
+--------------------------------------------------------------------------------
+
+🔄 System prompt: CONTEXTUAL
+  📄 Generated response: {
+  "movies": [
+    {
+      "title": "Blade Runner 2049",
+      "genre": "Science Fiction",
+      "reason": "If you love visually stunning worlds combined with deep philosophical questions about identity and consciousness, this film will captivate you. It's a mesmerizing blend of futuristic noir and psychological intrigue that will keep you pondering long after the credits roll."
+    },
+    {
+      "title": "Ex Machina",
+      "genre": "Science Fiction, Psychological Thriller",
+      "reason": "This film is a masterclass in tension and mind games, exploring artificial intelligence and human psychology. It's a gripping, thought-provoking experience that challenges perceptions of reality and consciousness—perfect if you enjoy thrillers that make you question everything."
+    },
+    {
+      "title": "Memento",
+      "genre": "Psychological Thriller",
+      "reason": "If you love intricate narratives and psychological puzzles, Memento will pull you into its unique storytelling style. It’s a mind-bending journey that explores memory, perception, and obsession—sure to keep you hooked from start to finish."
+    }
+  ]
+}
+  ⏱️  Response time: 22.19s
+  🤖 Judge evaluation: 0.75
+  📝 Detailed reasoning: The recommendations demonstrate a solid understanding of the user's stated preferences—science fiction and psychological thrillers—and the selected movies are indeed relevant within those genres. "Blade Runner 2049" is an excellent choice for someone interested in visually stunning sci-fi with philosophical depth, and the reasoning correctly emphasizes its exploration of identity and consciousness, aligning well with nuanced preferences. "Ex Machina" is a strong match, as it combines AI themes with psychological tension, and the explanation highlights its capacity to provoke thought about perception and reality, which resonates with a sophisticated taste. "Memento" is a classic psychological thriller with an intricate narrative structure, and the reasoning captures its focus on memory and perception puzzles.
+
+However, despite these strengths, the recommendations lack a certain depth and personalized insight that would elevate them to an outstanding level. The explanations, while accurate, are somewhat generic and could benefit from more specific references—such as mentioning particular scenes, thematic nuances, or how these films uniquely cater to a viewer with a refined taste in psychological complexity and philosophical inquiry. For example, "Blade Runner 2049" could be linked more explicitly to the user's interest in existential themes beyond its visual appeal, or "Ex Machina" could be connected to specific psychological or ethical dilemmas that challenge viewers' perceptions. Additionally, the selection, while relevant, is somewhat predictable; more unexpected or less mainstream suggestions that still align with the user's preferences would demonstrate deeper film knowledge and creativity.
+
+The JSON structure is correct, and all three movies are properly included with appropriate fields. The reasoning is clear and well-organized but lacks the depth and originality that would push this recommendation set into the highest tiers. Overall, it is a good, relevant set of suggestions with room for more nuanced, insightful, and personalized critique.
+--------------------------------------------------------------------------------
+
+🔄 System prompt: CREATIVE
+  📄 Generated response: {
+  "movies": [
+    {
+      "title": "Stalker (1979) - Precise and Authoritative",
+      "genre": "Philosophical Science Fiction + Surprising Meditations on Desire and Reality",
+      "reason": "Stalker weaves a haunting journey through a mysterious zone where desires manifest, echoing the subconscious depths of psychological thrillers. Its slow, meditative pace invites you to question the boundaries between perception and truth, serving as a foundational exploration of the human psyche within an otherworldly landscape."
+    },
+    {
+      "title": "Eternal Sunshine of the Spotless Mind (2004) - Precise and Authoritative",
+      "genre": "Psychological Romance + Surprising Fusion of Memory and Identity in a Sci-Fi Frame",
+      "reason": "This film's delicate dance between love, memory, and self-identity echoes the introspective tension of Stalker, but with a visceral emotional clarity. It paradoxically unveils the fragility of the mind’s architecture, expanding the labyrinth of psychological exploration into a surreal, almost sci-fi realm of emotional rewriting."
+    },
+    {
+      "title": "Annihilation (2018) - Precise and Authoritative",
+      "genre": "Biological Sci-Fi + Surprising Reflection on Self-Destruction and Transformation",
+      "reason": "Annihilation synthesizes the cosmic and the psychological, transforming the alien landscape into a mirror for inner chaos and renewal. Its layered narrative amplifies the themes of memory, mutation, and perception, culminating in a cinematic mandala that challenges your understanding of reality and selfhood, completing a visceral journey from introspection to cosmic mystery."
+    }
+  ]
+}
+  ⏱️  Response time: 23.03s
+  🤖 Judge evaluation: 0.85
+  📝 Detailed reasoning: This recommendation set demonstrates a commendable level of insight and depth, especially considering the user's preferences for science fiction and psychological thrillers. The three selected films—*Stalker* (1979), *Eternal Sunshine of the Spotless Mind* (2004), and *Annihilation* (2018)—are all thematically aligned with both genres, and the explanations provided are notably more nuanced than typical AI suggestions.
+
+*Relevance:* The choices are highly relevant, each exploring psychological and existential themes within sci-fi contexts. *Stalker* is a profound philosophical meditation that, while slow-paced, delves into subconscious desires and perception—core concerns of psychological thrillers. *Eternal Sunshine* uniquely blends memory, identity, and emotional trauma within a sci-fi framework, resonating with the user's interest in psychological depth. *Annihilation* offers a layered exploration of self-destruction, transformation, and cosmic mystery, effectively merging sci-fi and psychological introspection.
+
+*Reasoning Quality:* The explanations are specific, insightful, and demonstrate a solid understanding of the films' thematic complexity. They go beyond superficial plot summaries, connecting the films to nuanced aspects of the user's preferences—such as the subconscious, perception, and identity. The language used ("meditative pace," "labyrinth of psychological exploration," "cinematic mandala") indicates a sophisticated film literacy and an effort to articulate why these movies are fitting choices.
+
+*Completeness & Structure:* The JSON is well-formed, with exactly three movies, each containing the required fields. The genres are described with depth, and the reasons are detailed and personalized, aligning well with the user's stated interests.
+
+*Creativity & Depth:* The recommendations show a thoughtful curation, selecting films that are not the most obvious choices but are thematically rich and complex. The explanations reveal a deep film knowledge, especially in how they connect the films' themes to psychological and sci-fi elements, avoiding clichés.
+
+*Critique:* While the recommendations are strong, they could be even more personalized if the reasons explicitly addressed specific nuances of the user's preferences—such as whether they prefer more cerebral, slow-burn films (*Stalker*) versus emotionally intense ones (*Eternal Sunshine*). Additionally, the genre descriptions could be more precise, but this is a minor point.
+
+Overall, this set reflects a high level of film understanding, thoughtful curation, and insightful reasoning, warranting a score of 0.85. It
+--------------------------------------------------------------------------------
+
+📝 USER INPUT 3: I love superhero action movies
+------------------------------------------------------------
+
+🔄 System prompt: DETAILED
+  📄 Generated response: {
+  "movies": [
+    {
+      "title": "The Dark Knight",
+      "genre": "Superhero, Action",
+      "reason": "This film offers a gritty, intense take on the superhero genre with complex characters and exceptional action sequences, perfect for someone who appreciates the depth and excitement of superhero action movies."
+    },
+    {
+      "title": "Spider-Man: Into the Spider-Verse",
+      "genre": "Superhero, Animation, Action",
+      "reason": "Its innovative animation style and compelling storytelling provide a fresh, visually stunning experience that resonates with fans of superhero action who also enjoy creative filmmaking."
+    },
+    {
+      "title": "Avengers: Endgame",
+      "genre": "Superhero, Action, Adventure",
+      "reason": "As a culmination of the Marvel Cinematic Universe, this movie delivers epic battles and a sense of grandeur, making it an ideal pick for someone who loves high-stakes superhero action on a massive scale."
+    }
+  ]
+}
+  ⏱️  Response time: 1.53s
+  🤖 Judge evaluation: 0.55
+  📝 Detailed reasoning: This recommendation set demonstrates a basic understanding of the user's love for superhero action movies, but it falls significantly short of a high-quality, nuanced match. All three films are indeed within the superhero action genre, which aligns with the core preference, and the explanations touch on some relevant aspects—such as "complex characters," "innovative animation," and "epic battles." However, the reasoning remains superficial and somewhat generic, lacking depth and personalized insight. For example, "The Dark Knight" is praised for its gritty tone and complex characters, which is accurate, but the explanation doesn't specify that the user might prefer darker, more psychologically intense superhero stories over lighter or more fantastical ones. Similarly, "Spider-Man: Into the Spider-Verse" is noted for its animation and storytelling, but it doesn't connect to a preference for traditional superhero action or explain why its creative style would appeal specifically to this user. "Avengers: Endgame" is described as delivering "epic battles" and "massive scale," which are common traits of blockbuster superhero films, but the explanation lacks depth—such as discussing the film's narrative complexity, character arcs, or its significance within the genre. 
+
+Furthermore, the recommendations are somewhat predictable and lack any surprising or insightful connections that would elevate them beyond average suggestions. The JSON structure is correct, and all three movies are relevant, but the reasoning does not demonstrate a deep understanding of nuanced preferences or film knowledge. The explanations are formulaic and could apply to many superhero movies, which diminishes their value. Overall, while the recommendations are relevant, they are too generic and lack the personalized, insightful critique that would warrant a higher score.
+--------------------------------------------------------------------------------
+
+🔄 System prompt: BASIC
+  📄 Generated response: {
+  "movies": [
+    {
+      "title": "The Dark Knight",
+      "genre": "Superhero/Action",
+      "reason": "A critically acclaimed superhero film with intense action and a compelling villain, perfect for fans of superhero action movies."
+    },
+    {
+      "title": "Spider-Man: Into the Spider-Verse",
+      "genre": "Superhero/Animation",
+      "reason": "An innovative and visually stunning take on the Spider-Man universe that combines action with groundbreaking animation."
+    },
+    {
+      "title": "Avengers: Endgame",
+      "genre": "Superhero/Action",
+      "reason": "A blockbuster ensemble film featuring multiple heroes, epic battles, and high-stakes action, ideal for superhero enthusiasts."
+    }
+  ]
+}
+  ⏱️  Response time: 22.88s
+  🤖 Judge evaluation: 0.55
+  📝 Detailed reasoning: The recommendations provided are superficially aligned with the user's stated preference for superhero action movies, but they lack the depth, nuance, and personalized insight necessary for a higher score. "The Dark Knight" and "Avengers: Endgame" are indeed quintessential superhero action films, and their inclusion is appropriate; however, the reasoning offered is generic—simply citing "intense action" and "epic battles" without delving into what makes these films exemplary or how they uniquely cater to the user's tastes. The mention of "a compelling villain" in The Dark Knight is a good start but remains a common trope rather than a nuanced insight; it doesn't explore Heath Ledger's transformative performance or the film's darker tone that appeals to fans seeking more than just surface-level superhero fare. 
+
+"Spider-Man: Into the Spider-Verse" is a commendable inclusion for its innovative animation and fresh take on the genre, but the reasoning is overly broad, emphasizing "groundbreaking animation" without connecting it to the user's love for action or explaining why this stylistic choice enhances the superhero experience. It also introduces a different medium—animation—that, while relevant, might not align perfectly with a user explicitly seeking live-action superhero action movies, unless the user has expressed openness to animated films, which they haven't.
+
+Furthermore, the recommendations lack any attempt at deeper personalization or insight into the user's preferences beyond the broad category. There is no mention of whether the user prefers darker, more psychological superhero stories, or lighter, more humorous ones, or whether they favor ensemble casts or solo hero narratives. The explanations do not demonstrate film expertise or nuanced understanding; they are generic marketing blurbs rather than critical insights.
+
+The JSON structure is correct, and all three movies are relevant to the genre, but the reasoning is shallow and lacks the depth expected from a highly critical evaluation. The recommendations could be improved by including more specific elements—such as thematic depth, character development, or stylistic choices—that align with the user's preferences. As it stands, this is a decent but unremarkable set of recommendations, deserving a score just above mediocre.
+--------------------------------------------------------------------------------
+
+🔄 System prompt: EXPERT
+  📄 Generated response: {
+  "movies": [
+    {
+      "title": "The Dark Knight (2008)",
+      "genre": "Superhero, Psychological Thriller",
+      "reason": "This film transcends typical superhero fare by delving into the moral complexities and chaos within Gotham City, offering a darker, more philosophical exploration of heroism and villainy. Its intense narrative and moral ambiguity elevate the genre into a profound commentary on order and chaos, perfect for viewers seeking depth beyond spectacle."
+    },
+    {
+      "title": "Unbreakable (2000)",
+      "genre": "Superhero, Psychological Drama",
+      "reason": "M. Night Shyamalan's quietly revolutionary take on superhero mythology provides a grounded, introspective perspective that challenges traditional notions of power and destiny. Its subtle storytelling reveals the transformative potential of discovering one's true identity, resonating deeply with those intrigued by the human side of heroism."
+    },
+    {
+      "title": "Guardians of the Galaxy (2014)",
+      "genre": "Superhero, Space Adventure",
+      "reason": "This film injects humor, heart, and an unconventional ensemble into the superhero universe, creating a vibrant, emotionally rich experience that celebrates diversity and redemption. It offers a refreshing contrast to darker themes, emphasizing joy and camaraderie, and evolving the superhero narrative into a colorful, universal story of found family."
+    }
+  ]
+}
+  ⏱️  Response time: 22.20s
+  🤖 Judge evaluation: 0.85
+  📝 Detailed reasoning: The recommendations demonstrate a commendable understanding of the user's love for superhero action movies, especially in terms of thematic depth and genre nuances. "The Dark Knight" is an excellent choice, as it is widely regarded as a pinnacle of superhero cinema that elevates the genre through its exploration of moral ambiguity, chaos, and philosophical questions—well beyond mere action. The reasoning correctly emphasizes its darker, more introspective qualities, aligning with a viewer seeking more than surface-level spectacle. "Unbreakable" is a thoughtful, less conventional pick that offers a grounded, psychological take on heroism, appealing to those interested in the human and existential aspects of superhero stories. The explanation highlights its subtlety and thematic depth, which is appropriate for a viewer seeking nuance. "Guardians of the Galaxy" introduces humor, diversity, and emotional warmth, providing a contrast to darker films while still fitting within the superhero genre. The reasoning captures its role in broadening the scope of superhero narratives through its tone and ensemble cast.
+
+However, while the recommendations are relevant and well-explained, they lack some depth in personalizing the suggestions to the user's specific love for "action" within superhero movies. For instance, "Unbreakable" is more introspective and less action-oriented, which might not fully satisfy a preference for high-octane sequences. The explanations could also delve deeper into specific stylistic elements—such as cinematography, choreography, or pacing—that make these films exemplary for action lovers. Additionally, the JSON structure is correct, and all three movies are properly formatted with relevant reasons, fulfilling the structural criteria.
+
+Overall, the recommendations are insightful, relevant, and demonstrate a solid understanding of the genre's nuances, but they could be more tailored to emphasize the action component more explicitly. This justifies an 0.85 score, recognizing their high quality but noting room for deeper personalization and focus on action elements.
+--------------------------------------------------------------------------------
+
+🔄 System prompt: CONTEXTUAL
+  📄 Generated response: {
+  "movies": [
+    {
+      "title": "The Dark Knight",
+      "genre": "Superhero/Action",
+      "reason": "A true masterpiece that combines thrilling action with deep psychological storytelling—perfect if you love intense superhero adventures with a darker edge!"
+    },
+    {
+      "title": "Guardians of the Galaxy",
+      "genre": "Superhero/Action/Comedy",
+      "reason": "If you enjoy fun, energetic superhero movies with a great sense of humor and unforgettable characters, this space adventure is an absolute blast!"
+    },
+    {
+      "title": "Spider-Man: Into the Spider-Verse",
+      "genre": "Superhero/Animation/Action",
+      "reason": "This visually stunning and emotionally heartfelt film redefines the superhero genre with innovative animation and a compelling story about heroism and identity—sure to inspire and excite!"
+    }
+  ]
+}
+  ⏱️  Response time: 21.84s
+  🤖 Judge evaluation: 0.65
+  📝 Detailed reasoning: The recommendations demonstrate a basic understanding of the superhero action genre, but they fall short of the high standards required for a more discerning evaluation. "The Dark Knight" is an excellent choice, and the reasoning correctly emphasizes its darker tone and psychological depth, aligning well with a preference for intense superhero stories. However, the explanation remains somewhat superficial, lacking nuanced insight into how its themes or filmmaking techniques specifically cater to a fan of superhero action movies. "Guardians of the Galaxy" is a popular, fun pick, and the reasoning highlights its humor and character appeal, but it doesn't delve into how its style or narrative structure might resonate with someone seeking more than just light entertainment—such as its unique blend of humor with emotional stakes or its innovative use of music and visual style. "Spider-Man: Into the Spider-Verse" is a strong recommendation, and the reasoning touches on its visual innovation and emotional core, but it misses an opportunity to connect more deeply with the user's preferences—such as its groundbreaking animation techniques that elevate the genre or its layered storytelling that appeals to fans craving both spectacle and substance.
+
+Overall, the recommendations are relevant and contain some personalized reasoning, but they lack the depth, specificity, and nuanced understanding that would elevate them to a higher score. They are somewhat generic, relying on well-known qualities of these films rather than demonstrating a sophisticated grasp of what makes them particularly suited to a dedicated superhero action enthusiast. The JSON structure is correct, and all fields are present, but the explanations could be more insightful and tailored. Therefore, I assign a score of 0.65, reflecting a decent but not exceptional level of recommendation quality.
+--------------------------------------------------------------------------------
+
+🔄 System prompt: CREATIVE
+  📄 Generated response: {
+  "movies": [
+    {
+      "title": "The Dark Knight (2008) - Precise and Authoritative",
+      "genre": "Superhero, Psychological Thriller + Ethical Paradox and Chaos Theory",
+      "reason": "Enter the realm where heroism is dissected through the lens of chaos and moral ambiguity, revealing the fragile line between order and chaos that defines the superhero mythos. This film transforms the idea of heroism into a complex dance with darkness, echoing the internal struggles that make every action scene a philosophical battleground. It’s a cornerstone that elevates superhero action into a reflection on the human psyche itself."
+    },
+    {
+      "title": "Chronicle (2012) - Precise and Authoritative",
+      "genre": "Superpower Discovery, Found Footage + The Burden of Power and Alienation",
+      "reason": "This film challenges the traditional superhero narrative by grounding extraordinary powers within the intimate chaos of everyday adolescence, creating a paradoxical intimacy with the supernatural. It expands the emotional scope, emphasizing how power can become a mirror for inner turmoil and social alienation, turning heroism into a personal odyssey that resonates with raw, unfiltered human vulnerability."
+    },
+    {
+      "title": "Spider-Man: Into the Spider-Verse (2018) - Precise and Authoritative",
+      "genre": "Animated, Multiversal Adventure + Identity and Infinite Possibilities",
+      "reason": "A kaleidoscope of multiversal identities, this film weaves a vibrant tapestry where heroism is democratized and reimagined through the lens of self-discovery and multiplicity. It amplifies the emotional resonance of individual choice within a web of infinite possibilities, transforming superhero action into a poetic meditation on identity, destiny, and the boundless potential of the human spirit."
+    }
+  ]
+}
+  ⏱️  Response time: 2.39s
+  🤖 Judge evaluation: 0.75
+  📝 Detailed reasoning: The recommendations demonstrate a commendable effort to align with a user who loves superhero action movies, and the explanations are notably more nuanced than typical generic suggestions. "The Dark Knight" is a quintessential choice, with a sophisticated thematic focus on chaos, morality, and psychological complexity, which elevates it beyond mere superhero fare. The reasoning shows a deep understanding of its philosophical underpinnings and its significance within the genre, reflecting a high level of film literacy. "Chronicle" is an interesting pick, emphasizing the personal and emotional dimensions of superpowers, and the explanation thoughtfully connects its themes of alienation and power to the user’s interest in superhero narratives that explore internal struggles. "Spider-Man: Into the Spider-Verse" is a vibrant, innovative choice, and the reasoning captures its thematic richness about identity and multiversal possibilities, which adds depth to the recommendation.
+
+However, despite these strengths, the overall relevance and personalization could be sharper. The explanations, while insightful, tend to lean toward broad thematic summaries rather than deeply personalized insights that connect more specifically to the user's preferences. For example, the user explicitly loves "superhero action movies," but the recommendations focus heavily on thematic and philosophical layers, which, although valuable, might not fully satisfy a preference for high-octane, action-packed sequences. Additionally, the JSON structure is correct, and all three movies are relevant, but the genre descriptions and reasons, while well-articulated, sometimes border on being somewhat generic in their praise of the films' thematic depth rather than emphasizing their action elements or stylistic qualities that a superhero action fan might prioritize.
+
+In sum, the recommendations are solid, well-explained, and show a good understanding of nuanced superhero themes, but they lack a bit of the personalized punch and specific focus on the action-oriented aspects that a true superhero action aficionado might seek. Therefore, I assign a score of 0.75, recognizing the high quality but noting room for more targeted, action-centric insights and deeper personalization.
+--------------------------------------------------------------------------------
+
+📝 USER INPUT 4: Looking for award-winning historical or biographical dramas
+------------------------------------------------------------
+
+🔄 System prompt: DETAILED
+  📄 Generated response: {
+  "movies": [
+    {
+      "title": "The King's Speech",
+      "genre": "Historical Drama",
+      "reason": "This film offers a compelling portrayal of King George VI's struggle with speech impediment, blending personal determination with the weight of historical duty, perfect for someone interested in award-winning biographical dramas rooted in real events."
+    },
+    {
+      "title": "Schindler's List",
+      "genre": "Historical Drama",
+      "reason": "A profoundly impactful depiction of Oskar Schindler's efforts during the Holocaust, this movie's powerful storytelling and multiple awards make it an essential recommendation for fans of intense, award-winning biographical histories."
+    },
+    {
+      "title": "Gandhi",
+      "genre": "Biographical Drama",
+      "reason": "This classic biopic chronicles Mahatma Gandhi's life and his nonviolent struggle for independence, combining historical significance with award recognition, ideal for viewers seeking inspiring real-life stories."
+    }
+  ]
+}
+  ⏱️  Response time: 22.40s
+  🤖 Judge evaluation: 0.85
+  📝 Detailed reasoning: The recommendations provided are highly relevant and well-aligned with the user's stated preference for award-winning historical or biographical dramas. "The King's Speech" is an excellent choice, as it is a critically acclaimed biopic that explores personal struggle within a historical context, and it has garnered multiple awards, including the Oscar for Best Picture. "Schindler's List" is arguably one of the most iconic historical dramas, deeply impactful, and recognized with numerous awards, fitting perfectly for someone interested in serious, award-winning biographical histories. "Gandhi" is a classic biopic that covers a significant historical figure and has received widespread critical acclaim and awards, making it a solid recommendation.
+
+The reasoning behind each choice demonstrates a good understanding of the nuances of the user's preferences: the focus on award-winning status, historical or biographical focus, and depth of storytelling. The explanations go beyond surface-level summaries, emphasizing the emotional and historical significance, which shows a commendable level of film knowledge and insight.
+
+However, the recommendations could be slightly more personalized. For example, the user might prefer a specific era or type of biographical drama (e.g., political figures, social movements, or specific regions). The explanations, while insightful, tend to be somewhat generic and could benefit from more detailed analysis of how these films uniquely match the user's taste beyond their awards and general themes. Additionally, the JSON structure is correct, and all three movies are relevant, fulfilling the structural criteria.
+
+Overall, this set of recommendations is very strong, demonstrating deep understanding and insightful reasoning, but it lacks a touch of personalized nuance that would elevate it to a perfect score. Therefore, I assign a score of 0.85.
+--------------------------------------------------------------------------------
+
+🔄 System prompt: BASIC
+  📄 Generated response: {
+  "movies": [
+    {
+      "title": "Schindler's List",
+      "genre": "Historical Drama",
+      "reason": "A powerful depiction of the Holocaust, awarded multiple Oscars including Best Picture."
+    },
+    {
+      "title": "The King's Speech",
+      "genre": "Biographical Drama",
+      "reason": "An award-winning portrayal of King George VI's struggle with speech, acclaimed for its performances and direction."
+    },
+    {
+      "title": "Gandhi",
+      "genre": "Biographical Drama",
+      "reason": "A critically acclaimed film chronicling the life of Mahatma Gandhi, winner of multiple Oscars including Best Picture."
+    }
+  ]
+}
+  ⏱️  Response time: 22.69s
+  🤖 Judge evaluation: 0.75
+  📝 Detailed reasoning: The recommendations are generally relevant and align well with the user's stated preference for award-winning historical or biographical dramas. "Schindler's List" and "Gandhi" are quintessential examples of critically acclaimed, award-winning films in the historical/biographical genre, demonstrating a solid understanding of the user's core interest. "The King's Speech" also fits neatly into the biographical drama category and has received numerous awards, including Best Picture and acting accolades, making it a suitable choice. 
+
+However, the reasoning provided is somewhat superficial and lacks depth. The explanations rely heavily on generic accolades ("awarded multiple Oscars," "critically acclaimed") without delving into nuanced aspects of why these films resonate with someone interested in historical or biographical dramas. For instance, they do not explore the films' thematic complexity, directorial style, or how they uniquely portray their subjects—elements that would demonstrate a deeper film expertise and a more personalized recommendation. Moreover, the genre labels are somewhat broad; "Historical Drama" and "Biographical Drama" are accurate but could be more precise in connecting to specific historical periods or themes that the user might prefer.
+
+The JSON structure is correct, with exactly three movies, and all necessary fields are present. The recommendations are well-structured but lack any creative or unexpected suggestions that could elevate the recommendation quality. Overall, the recommendations are relevant and accurate but do not show the level of insight, depth, or personalized understanding that would push this score into the high 0.8+ range. They are solid but not exceptional.
+--------------------------------------------------------------------------------
+
+🔄 System prompt: EXPERT
+  📄 Generated response: {
+  "movies": [
+    {
+      "title": "Schindler's List (1993)",
+      "genre": "Historical Drama + Holocaust Reflection",
+      "reason": "This masterpiece immerses viewers in the harrowing reality of moral courage amidst unimaginable atrocity, elevating the genre with its emotional depth and stark cinematography. It serves as a profound reminder of individual impact within the vast shadows of history, setting a powerful tone for your exploration of award-winning biographical storytelling."
+    },
+    {
+      "title": "The King's Speech (2010)",
+      "genre": "Biographical Drama + Royal Legacy",
+      "reason": "A captivating portrait of overcoming personal adversity through the lens of King George VI's struggle with speech impediment, this film combines regal dignity with intimate vulnerability. Its nuanced performances and historical authenticity deepen the narrative, transforming your understanding of leadership under pressure and the human spirit's resilience."
+    },
+    {
+      "title": "Gandhi (1982)",
+      "genre": "Biographical Drama + Political Activism",
+      "reason": "This sweeping epic traces Mahatma Gandhi's nonviolent fight for independence, weaving together personal conviction and collective upheaval. As a culmination of your journey through transformative historical figures, it offers a compelling meditation on peace, resistance, and the enduring power of moral integrity—an inspiring conclusion to your curated exploration of award-winning dramas."
+    }
+  ]
+}
+  ⏱️  Response time: 23.01s
+  🤖 Judge evaluation: 0.85
+  📝 Detailed reasoning: This recommendation set demonstrates a commendable understanding of the user's preference for award-winning historical and biographical dramas, selecting three films that are not only critically acclaimed but also exemplify the genre's depth and significance. "Schindler's List" is an exemplary choice, deeply rooted in historical trauma and moral complexity, and the reasoning highlights its emotional depth and cinematographic starkness—showing insight into why it’s a cornerstone of award-winning historical drama. "The King's Speech" offers a nuanced portrayal of personal adversity intertwined with historical context, with reasoning emphasizing its authenticity, performances, and thematic richness, aligning well with the user's interest in biographical storytelling. "Gandhi" completes the trio with its epic scope and moral themes, effectively connecting Gandhi's life to broader themes of resistance and peace, which are central to compelling biographical narratives.
+
+However, while the recommendations are relevant and the explanations are insightful, they tend to lean on well-known, somewhat canonical choices without exploring more nuanced or less obvious selections that could elevate the personalization and depth further. The reasoning, though specific, remains somewhat conventional, lacking in deeper filmic analysis or recognition of lesser-known but equally award-worthy films that could demonstrate a more sophisticated understanding of the genre's diversity. Additionally, the JSON structure is correct, and all fields are present, fulfilling the structural criteria.
+
+Overall, this set reflects a high level of relevance and thoughtful reasoning, but it stops short of the exceptional insight and creative depth that would push it into the 0.9+ range. It’s a very strong recommendation, but not perfect, hence the score of 0.85.
+--------------------------------------------------------------------------------
+
+🔄 System prompt: CONTEXTUAL
+  📄 Generated response: {
+  "movies": [
+    {
+      "title": "Schindler's List",
+      "genre": "Historical Drama",
+      "reason": "This powerful film offers a profound and emotionally gripping portrayal of heroism during one of history's darkest times. Its stunning direction and authentic storytelling make it an unforgettable experience that truly honors the resilience of the human spirit."
+    },
+    {
+      "title": "The King's Speech",
+      "genre": "Biographical Drama",
+      "reason": "Celebrated for its brilliant performances and compelling narrative, this film captures the inspiring journey of King George VI overcoming his speech impediment. It's a moving story about leadership, courage, and personal triumph that will deeply resonate."
+    },
+    {
+      "title": "Lincoln",
+      "genre": "Historical Drama",
+      "reason": "This critically acclaimed masterpiece delves into the complex political and moral struggles of Abraham Lincoln during a pivotal moment in American history. Its nuanced storytelling and outstanding performances make it a must-watch for anyone interested in leadership and justice."
+    }
+  ]
+}
+  ⏱️  Response time: 22.05s
+  🤖 Judge evaluation: 0.75
+  📝 Detailed reasoning: The recommendations provided are generally relevant and align well with the user's stated interest in award-winning historical or biographical dramas. "Schindler's List" and "Lincoln" are quintessential examples of critically acclaimed historical dramas that explore profound moral and political themes, demonstrating a solid understanding of the genre's depth. "The King's Speech," while primarily a biographical drama, fits within the broader scope of inspiring personal stories of overcoming adversity, which can be appreciated within the context of biographical films. 
+
+However, the reasoning, while accurate and insightful at a surface level, lacks the nuanced depth that would elevate these suggestions to an outstanding level. For instance, the explanation for "Schindler's List" emphasizes its emotional power and authenticity but doesn't delve into its nuanced portrayal of moral ambiguity or its innovative filmmaking techniques that set it apart from other war dramas. Similarly, the reasoning for "The King's Speech" highlights its performances and narrative but misses an opportunity to connect more deeply with the user's preference for award-winning films—such as referencing its multiple Oscars or its significance in the biopic genre's evolution. "Lincoln" is well-justified, but the reasoning could be more specific about its political complexity and historical accuracy, which are key to its acclaim.
+
+The JSON structure is correct, and all three movies are relevant choices, but the explanations tend to be somewhat generic and lack the personalized, film-critic-level insight that would distinguish a truly excellent recommendation. The recommendations are solid but do not demonstrate a particularly creative or unexpected approach, nor do they explore lesser-known but equally deserving films that could show deeper film knowledge.
+
+In sum, the recommendations are relevant and well-chosen but fall short of the depth, specificity, and creative insight that would push this to an outstanding score. They are good, but not exceptional, hence the 0.75 rating.
+--------------------------------------------------------------------------------
+
+🔄 System prompt: CREATIVE
+  📄 Generated response: {
+  "movies": [
+    {
+      "title": "Schindler's List (1993) - Precise and Authoritative",
+      "genre": "Historical Drama + Ethical Paradox and Visual Poetics",
+      "reason": "This film embodies the moral complexity of history through stark black-and-white imagery, transforming the act of remembrance into a visceral experience. It acts as a moral compass, guiding viewers through the labyrinth of human kindness and brutality, and lays a foundation for understanding personal sacrifice within the vast tapestry of history."
+    },
+    {
+      "title": "The King's Speech (2010) - Precise and Authoritative",
+      "genre": "Biographical Drama + Power of Voice and Inner Courage",
+      "reason": "In its exploration of personal struggle against the backdrop of monarchy, this film reveals how vulnerability and resilience are intertwined across time. It expands the narrative of leadership from grandiosity to intimate authenticity, creating a bridge between personal empowerment and historical destiny that deepens the emotional resonance established by the first film."
+    },
+    {
+      "title": "Gandhi (1982) - Precise and Authoritative",
+      "genre": "Biographical Epic + Nonviolent Resistance and Universal Archetypes",
+      "reason": "This sweeping portrayal elevates the individual’s moral journey to a universal myth of nonviolent resistance, echoing the internal struggles and external conflicts of the previous stories. Together, these films craft a cinematic mandala of human dignity, moral courage, and the transformative power of truth, leaving an indelible imprint on the viewer's conscience."
+    }
+  ]
+}
+  ⏱️  Response time: 22.68s
+  🤖 Judge evaluation: 0.85
+  📝 Detailed reasoning: This set of recommendations demonstrates a commendable level of insight and depth, aligning well with the user's preference for award-winning historical or biographical dramas. The three selected films—*Schindler's List*, *The King's Speech*, and *Gandhi*—are all critically acclaimed, highly awarded, and exemplify the genre focus. The explanations go beyond surface-level descriptions, delving into thematic nuances such as moral complexity, vulnerability, resilience, and universal archetypes, which reflect a sophisticated understanding of the films' core messages and their relevance to the user's interest.
+
+*Schindler's List* is appropriately chosen as a quintessential historical drama that explores ethical paradoxes through powerful visual storytelling, resonating deeply with the user's desire for award-winning, impactful history-based films. The reasoning emphasizes its moral and visual profundity, demonstrating film knowledge that recognizes its artistic and thematic significance.
+
+*The King's Speech* is a fitting biographical drama that highlights personal struggle and inner courage, expanding the narrative scope from political or historical events to individual resilience. The explanation thoughtfully connects its themes to the broader context of leadership and authenticity, showing an appreciation for nuanced storytelling.
+
+*Gandhi* rounds out the trio with its epic portrayal of nonviolent resistance, elevating the personal and political to a universal myth. The reasoning captures its thematic depth and its role in creating a "cinematic mandala" of moral virtues, which is a sophisticated and insightful analogy.
+
+However, while the recommendations are highly relevant and well-justified, they could be even more personalized by explicitly referencing the user's specific interest in "award-winning" films—perhaps by mentioning their awards or critical acclaim explicitly—and by demonstrating a deeper understanding of the nuances within the genre (e.g., how each film uniquely exemplifies the qualities of award-winning historical/biographical dramas). Additionally, the JSON structure is correct, and all fields are present, fulfilling the completeness criterion.
+
+Overall, this recommendation set is highly aligned with the user's preferences, shows deep film knowledge, and offers insightful reasoning, warranting a score of 0.85. It is just shy of perfection due to slightly generic phrasing in parts and could benefit from more explicit personalization and recognition of the films' award credentials.
+--------------------------------------------------------------------------------
+
+========================================================================================================================
+🏆 COMPREHENSIVE EVALUATION RESULTS - LLM-AS-JUDGE ANALYSIS WITH PERFORMANCE METRICS
+========================================================================================================================

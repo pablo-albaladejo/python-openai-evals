@@ -1,0 +1,16 @@
+{
+  "test_cases": [
+    {
+      "category": "cinephile_expert",
+      "user_input": "As a serious cinephile with a background in film studies, I'm seeking arthouse cinema that challenges conventional narrative structures. Films that employ innovative cinematography, explore existential themes, and demonstrate auteur vision. Think Tarkovsky's Solaris, Bergman meditations, or contemporary directors like Apichatpong Weerasethakul who blend reality with surrealism"
+    },
+    {
+      "category": "casual_streamer",
+      "user_input": "Hey, I'm just chilling on the couch and want something fun to watch with my friends. Nothing too heavy or complicated - maybe some mindless action, comedy, or those feel-good movies that make you laugh and forget about the week. Bonus if it's got great one-liners or epic fight scenes!"
+    },
+    {
+      "category": "niche_enthusiast",
+      "user_input": "I'm obsessed with the golden age of Hollywood musicals from the 1940s-1960s. Specifically, I'm looking for MGM Technicolor extravaganzas with elaborate dance numbers, big orchestral scores, and those incredible production values. Think Fred Astaire/Ginger Rogers, elaborate Busby Berkeley sequences, and that unmistakable Hollywood glamour"
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+Compare these two system prompts for movie recommendation AI systems:
+
+WINNER PROMPT ({winner_name.upper()}) - Score: {winner_score:.3f}
+{winner_prompt}
+
+VS
+
+LOSER PROMPT ({loser_name.upper()}) - Score: {loser_score:.3f}
+{loser_prompt}
+
+Explain in 2-3 sentences why the winner prompt performs better than the loser prompt.
+Focus on specific differences in approach, clarity, and effectiveness.

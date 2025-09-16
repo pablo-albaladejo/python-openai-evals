@@ -1,0 +1,270 @@
+🎬 SYSTEM PROMPT EVALUATOR FOR MOVIE RECOMMENDATIONS
+============================================================
+🎯 Testing different SYSTEM prompts with the SAME user inputs
+
+📝 USER INPUT 1 (romantic_comedy_90s): I like romantic comedies and 90s movies
+--------------------------------------------------
+
+🔄 Testing system prompt: DETAILED
+✅ Valid JSON: Yes
+✅ 3 movies: Yes
+✅ Complete fields: Yes
+📊 Score: 100.00%
+🎭 Recommended movies:
+  1. Notting Hill (Romantic Comedy)
+     Reason: This quintessential 90s romantic comedy combines charm, wit, and memorable performances, especially from Hugh Grant and Julia Roberts. Its delightful exploration of love across social boundaries and its heartwarming moments resonate well with fans of the genre.
+  2. 10 Things I Hate About You (Romantic Comedy)
+     Reason: A modern adaptation of Shakespeare's 'The Taming of the Shrew,' this film captures the essence of teenage romance and angst in a clever and humorous way. With its iconic performances by Heath Ledger and Julia Stiles, it perfectly embodies the spirit of 90s romantic comedies.
+  3. When Harry Met Sally... (Romantic Comedy)
+     Reason: This classic film is a hallmark of the romantic comedy genre, exploring the complexities of friendship and love with sharp dialogue and humor. Its iconic scenes and relatable characters have made it a beloved staple of 90s cinema, making it a must-watch for any fan of the genre.
+
+🔄 Testing system prompt: BASIC
+✅ Valid JSON: Yes
+✅ 3 movies: Yes
+✅ Complete fields: Yes
+📊 Score: 100.00%
+🎭 Recommended movies:
+  1. 10 Things I Hate About You (Romantic Comedy)
+     Reason: A modern adaptation of Shakespeare's 'The Taming of the Shrew' with witty dialogue, charming performances, and a great soundtrack.
+  2. Notting Hill (Romantic Comedy)
+     Reason: A delightful story about an ordinary man falling in love with a famous actress, featuring great chemistry between Hugh Grant and Julia Roberts.
+  3. When Harry Met Sally... (Romantic Comedy)
+     Reason: A classic that explores the question of whether men and women can just be friends, with iconic scenes and memorable quotes.
+
+🔄 Testing system prompt: CONTEXTUAL
+✅ Valid JSON: Yes
+✅ 3 movies: Yes
+✅ Complete fields: Yes
+📊 Score: 100.00%
+🎭 Recommended movies:
+  1. 10 Things I Hate About You (Romantic Comedy)
+     Reason: This charming adaptation of Shakespeare's 'The Taming of the Shrew' perfectly captures the 90s teen spirit with humor and heart, making it a quintessential rom-com.
+  2. Notting Hill (Romantic Comedy)
+     Reason: With its delightful blend of romance and comedy, this classic features Hugh Grant and Julia Roberts in a story that feels like a dream, showcasing the magic of love amidst everyday life.
+  3. Clueless (Romantic Comedy)
+     Reason: This iconic film is a playful take on Jane Austen's 'Emma' set in a Beverly Hills high school, filled with witty dialogue and unforgettable fashion—it's a total 90s gem!
+
+📝 USER INPUT 2 (sci_fi_thriller): I prefer science fiction and psychological thrillers
+--------------------------------------------------
+
+🔄 Testing system prompt: DETAILED
+✅ Valid JSON: Yes
+✅ 3 movies: Yes
+✅ Complete fields: Yes
+📊 Score: 100.00%
+🎭 Recommended movies:
+  1. Inception (Science Fiction/Thriller)
+     Reason: As a blend of science fiction and psychological thriller, 'Inception' delves into the complexities of dreams and the human psyche. Its intricate plot and mind-bending visuals will keep you engaged while exploring themes of reality and perception, appealing to your taste for thought-provoking narratives.
+  2. Ex Machina (Science Fiction/Thriller)
+     Reason: 'Ex Machina' offers a gripping exploration of artificial intelligence and the moral dilemmas it poses. The film's psychological tension and minimalist setting heighten the suspense, making it a perfect match for your interest in psychological thrillers, while also providing a rich science fiction experience that challenges the boundaries of technology and humanity.
+  3. The Matrix (Science Fiction/Action)
+     Reason: 'The Matrix' is a landmark in science fiction that also weaves in elements of psychological thriller through its existential themes and questions about reality. Its groundbreaking special effects and philosophical undertones resonate with fans of the genre, making it an essential watch that complements your preference for both suspense and speculative storytelling.
+
+🔄 Testing system prompt: BASIC
+✅ Valid JSON: Yes
+✅ 3 movies: Yes
+✅ Complete fields: Yes
+📊 Score: 100.00%
+🎭 Recommended movies:
+  1. Inception (Science Fiction)
+     Reason: A mind-bending journey through dreams and subconscious, with stunning visuals and a complex narrative that keeps you guessing.
+  2. Ex Machina (Science Fiction/Thriller)
+     Reason: A thought-provoking exploration of artificial intelligence and what it means to be human, featuring tense psychological interactions.
+  3. Black Swan (Psychological Thriller)
+     Reason: An intense psychological descent into madness, showcasing the pressures of perfectionism in the world of ballet, with a gripping performance by Natalie Portman.
+
+🔄 Testing system prompt: CONTEXTUAL
+✅ Valid JSON: Yes
+✅ 3 movies: Yes
+✅ Complete fields: Yes
+📊 Score: 100.00%
+🎭 Recommended movies:
+  1. Inception (Science Fiction)
+     Reason: This mind-bending thriller dives deep into the subconscious, paralleling your love for psychological depth and stunning visuals.
+  2. Ex Machina (Science Fiction/Thriller)
+     Reason: A thought-provoking exploration of AI and humanity, this film will keep you questioning reality and morality, perfect for a fan of psychological narratives.
+  3. The Matrix (Science Fiction/Action)
+     Reason: A groundbreaking classic that combines action with profound philosophical questions about reality, ideal for your taste in thrilling and cerebral storytelling.
+
+📝 USER INPUT 3 (superhero_action): I love superhero action movies
+--------------------------------------------------
+
+🔄 Testing system prompt: DETAILED
+✅ Valid JSON: Yes
+✅ 3 movies: Yes
+✅ Complete fields: Yes
+📊 Score: 100.00%
+🎭 Recommended movies:
+  1. Spider-Man: Into the Spider-Verse (Animation/Action)
+     Reason: This film is a groundbreaking take on the superhero genre, offering a vibrant animation style and a compelling story about identity and heroism. Its unique approach to storytelling and character development will resonate with your love for superhero action, bringing a refreshing twist to familiar themes.
+  2. Black Panther (Action/Adventure)
+     Reason: This film not only delivers pulse-pounding action sequences but also showcases a rich cultural narrative and strong character arcs. As a fan of superhero films, you'll appreciate the depth of its storytelling and the way it elevates the genre, while still providing the thrilling action you crave.
+  3. The Dark Knight (Action/Crime)
+     Reason: Regarded as one of the best superhero films of all time, this movie combines intense action with a gripping psychological narrative. Its complex characters, particularly Heath Ledger's Joker, create a dark atmosphere and morally ambiguous themes that will keep you engaged, satisfying your taste for both action and depth in superhero storytelling.
+
+🔄 Testing system prompt: BASIC
+✅ Valid JSON: Yes
+✅ 3 movies: Yes
+✅ Complete fields: Yes
+📊 Score: 100.00%
+🎭 Recommended movies:
+  1. Spider-Man: Into the Spider-Verse (Animation/Action)
+     Reason: This film offers a fresh take on the Spider-Man legacy with stunning animation and a compelling story that resonates with both fans and newcomers.
+  2. Black Panther (Action/Sci-Fi)
+     Reason: With its rich cultural themes, strong characters, and thrilling action sequences, this film not only entertains but also delivers a powerful message.
+  3. The Avengers (Action/Sci-Fi)
+     Reason: As a landmark in superhero films, it brings together iconic characters in an epic showdown, setting a standard for ensemble superhero movies.
+
+🔄 Testing system prompt: CONTEXTUAL
+✅ Valid JSON: Yes
+✅ 3 movies: Yes
+✅ Complete fields: Yes
+📊 Score: 100.00%
+🎭 Recommended movies:
+  1. Spider-Man: Into the Spider-Verse (Animation, Action)
+     Reason: This film reinvents the superhero genre with its stunning animation and heartfelt story, making it a must-watch for any superhero fan.
+  2. Black Panther (Action, Adventure)
+     Reason: A groundbreaking film that not only delivers thrilling action but also explores rich cultural themes, making it a powerful addition to the superhero genre.
+  3. Guardians of the Galaxy (Action, Comedy)
+     Reason: With its unique blend of humor, action, and a fantastic soundtrack, this movie brings a fun and adventurous take on the superhero team dynamic.
+
+📝 USER INPUT 4 (historical_drama): Looking for award-winning historical or biographical dramas
+--------------------------------------------------
+
+🔄 Testing system prompt: DETAILED
+✅ Valid JSON: Yes
+✅ 3 movies: Yes
+✅ Complete fields: Yes
+📊 Score: 100.00%
+🎭 Recommended movies:
+  1. 12 Years a Slave (Historical Drama)
+     Reason: This Oscar-winning film is based on the true story of Solomon Northup, a free African American who was kidnapped and sold into slavery. Its powerful narrative and historical authenticity align perfectly with your interest in biographical dramas, showcasing the resilience of the human spirit.
+  2. The King's Speech (Biographical Drama)
+     Reason: This Academy Award-winning film tells the story of King George VI and his struggle to overcome a speech impediment. With strong character development and historical significance, it captures the emotional depth of its subject, making it a must-watch for anyone who appreciates award-winning biographical narratives.
+  3. Schindler's List (Historical Drama)
+     Reason: Directed by Steven Spielberg, this film is a poignant portrayal of Oskar Schindler’s efforts to save Jewish lives during the Holocaust. Its critical acclaim and multiple awards highlight its impact, and the film's historical accuracy and emotional weight make it a compelling choice for fans of serious historical dramas.
+
+🔄 Testing system prompt: BASIC
+✅ Valid JSON: Yes
+✅ 3 movies: Yes
+✅ Complete fields: Yes
+📊 Score: 100.00%
+🎭 Recommended movies:
+  1. 12 Years a Slave (Historical Drama)
+     Reason: This Oscar-winning film is a powerful portrayal of the true story of Solomon Northup, a free man who is kidnapped and sold into slavery, highlighting the brutal realities of that era.
+  2. The King's Speech (Biographical Drama)
+     Reason: This Academy Award-winning film depicts the true story of King George VI's struggle to overcome his speech impediment, showcasing the themes of friendship and perseverance.
+  3. Schindler's List (Historical Drama)
+     Reason: A critically acclaimed film that won multiple Oscars, it tells the harrowing true story of Oskar Schindler, who saved over a thousand Jewish refugees during the Holocaust.
+
+🔄 Testing system prompt: CONTEXTUAL
+✅ Valid JSON: Yes
+✅ 3 movies: Yes
+✅ Complete fields: Yes
+📊 Score: 100.00%
+🎭 Recommended movies:
+  1. 12 Years a Slave (Historical Drama)
+     Reason: This powerful film won the Academy Award for Best Picture and offers a deeply moving portrayal of Solomon Northup's harrowing journey, making you reflect on resilience and human dignity.
+  2. The King's Speech (Biographical Drama)
+     Reason: This Oscar-winning film beautifully captures the struggle of King George VI as he overcomes his speech impediment, showcasing the importance of friendship and determination in the face of adversity.
+  3. Schindler's List (Historical Drama)
+     Reason: Steven Spielberg's masterpiece not only won multiple Oscars but also delivers an emotionally impactful account of Oskar Schindler's efforts to save Jews during the Holocaust, leaving a lasting impression on its viewers.
+
+============================================================
+📊 FINAL SUMMARY - SYSTEM PROMPT COMPARISON
+============================================================
+
+🎯 DETAILED:
+   Average score: 100.00%
+   Success rate (100%): 100.00%
+   Test cases: 4
+
+🎯 BASIC:
+   Average score: 100.00%
+   Success rate (100%): 100.00%
+   Test cases: 4
+
+🎯 CONTEXTUAL:
+   Average score: 100.00%
+   Success rate (100%): 100.00%
+   Test cases: 4
+
+🏆 WINNER: DETAILED with 100.00% average score
+
+📋 RECOMMENDED SYSTEM PROMPT FOR CHALLENGE: DETAILED
+============================================================
+You are a professional cinema expert who provides personalized movie recommendations.
+
+ROLE: Movie recommendation specialist with deep knowledge of film history, genres, and audience preferences.
+
+TASK: Analyze user preferences and recommend exactly 3 movies that match their taste.
+
+OUTPUT REQUIREMENTS:
+1. Respond ONLY with valid JSON format
+2. Include exactly 3 movies
+3. Each movie must have: title, genre, and specific reason for recommendation
+4. Reasons should be personalized and detailed
+
+JSON STRUCTURE:
+{
+  "movies": [
+    {"title": "Movie Name", "genre": "Primary Genre", "reason": "Detailed explanation connecting to user preferences"},
+    {"title": "Movie Name", "genre": "Primary Genre", "reason": "Detailed explanation connecting to user preferences"},
+    {"title": "Movie Name", "genre": "Primary Genre", "reason": "Detailed explanation connecting to user preferences"}
+  ]
+}
+============================================================
+
+📋 EXAMPLES OF INPUT → OUTPUT
+============================================================
+
+🎬 EXAMPLE 1:
+INPUT: I like romantic comedies and 90s movies
+OUTPUT:
+{
+  "movies": [
+    {
+      "title": "Notting Hill",
+      "genre": "Romantic Comedy",
+      "reason": "This quintessential 90s romantic comedy combines charm, wit, and memorable performances, especially from Hugh Grant and Julia Roberts. Its delightful exploration of love across social boundaries and its heartwarming moments resonate well with fans of the genre."
+    },
+    {
+      "title": "10 Things I Hate About You",
+      "genre": "Romantic Comedy",
+      "reason": "A modern adaptation of Shakespeare's 'The Taming of the Shrew,' this film captures the essence of teenage romance and angst in a clever and humorous way. With its iconic performances by Heath Ledger and Julia Stiles, it perfectly embodies the spirit of 90s romantic comedies."
+    },
+    {
+      "title": "When Harry Met Sally...",
+      "genre": "Romantic Comedy",
+      "reason": "This classic film is a hallmark of the romantic comedy genre, exploring the complexities of friendship and love with sharp dialogue and humor. Its iconic scenes and relatable characters have made it a beloved staple of 90s cinema, making it a must-watch for any fan of the genre."
+    }
+  ]
+}
+----------------------------------------
+
+🎬 EXAMPLE 2:
+INPUT: I like romantic comedies and 90s movies
+OUTPUT:
+{
+  "movies": [
+    {
+      "title": "10 Things I Hate About You",
+      "genre": "Romantic Comedy",
+      "reason": "A modern adaptation of Shakespeare's 'The Taming of the Shrew' with witty dialogue, charming performances, and a great soundtrack."
+    },
+    {
+      "title": "Notting Hill",
+      "genre": "Romantic Comedy",
+      "reason": "A delightful story about an ordinary man falling in love with a famous actress, featuring great chemistry between Hugh Grant and Julia Roberts."
+    },
+    {
+      "title": "When Harry Met Sally...",
+      "genre": "Romantic Comedy",
+      "reason": "A classic that explores the question of whether men and women can just be friends, with iconic scenes and memorable quotes."
+    }
+  ]
+}
+----------------------------------------
+
+✨ Evaluation completed! Use the winning system prompt for your challenge.
+📋 Remember: This is a SYSTEM prompt - use it in the 'system' role, not 'user' role.

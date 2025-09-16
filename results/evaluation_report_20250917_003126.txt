@@ -1,0 +1,47 @@
+🎬 SYSTEM PROMPT EVALUATOR FOR MOVIE RECOMMENDATIONS
+============================================================
+🎯 Testing different SYSTEM prompts with the SAME user inputs
+
+📝 USER INPUT 1 (cinephile_expert): As a serious cinephile with a background in film studies, I'm seeking arthouse cinema that challenges conventional narrative structures. Films that employ innovative cinematography, explore existential themes, and demonstrate auteur vision. Think Tarkovsky's Solaris, Bergman meditations, or contemporary directors like Apichatpong Weerasethakul who blend reality with surrealism
+--------------------------------------------------
+
+🔄 Testing system prompt: DETAILED
+✅ Valid JSON: Yes
+✅ 3 movies: Yes
+✅ Complete fields: Yes
+📊 Score: 100.00%
+🎭 Recommended movies:
+  1. Stalker (Science Fiction / Philosophical Drama)
+     Reason: This Tarkovsky masterpiece exemplifies poetic realism and slow, contemplative pacing that deeply explore existential and metaphysical questions, aligning perfectly with your appreciation for innovative cinematography and auteur-driven storytelling.
+  2. The Holy Mountain (Surrealist / Experimental)
+     Reason: Directed by Alejandro Jodorowsky, this film offers a highly symbolic and surreal visual experience that challenges narrative conventions, making it an ideal choice for your interest in surrealism and avant-garde cinema.
+  3. Uncle Boonmee Who Can Recall His Past Lives (Contemporary Arthouse / Magical Realism)
+     Reason: From Apichatpong Weerasethakul, this film beautifully blurs reality and memory through hypnotic visuals and meditative storytelling, resonating with your fascination for blending reality with surrealism and exploring existential themes.
+
+🔄 Testing system prompt: BASIC
+✅ Valid JSON: Yes
+✅ 3 movies: Yes
+✅ Complete fields: Yes
+📊 Score: 100.00%
+🎭 Recommended movies:
+  1. Stalker (Science Fiction / Drama)
+     Reason: Directed by Tarkovsky, this film exemplifies poetic and philosophical exploration with innovative cinematography that challenges conventional narrative structures.
+  2. Persona (Drama / Psychological)
+     Reason: Bergman's meditative approach and focus on existential themes make this a profound exploration of identity and perception, employing minimalist yet intense visual storytelling.
+  3. Uncle Boonmee Who Can Recall His Past Lives (Fantasy / Surrealism)
+     Reason: By Apichatpong Weerasethakul, this film masterfully blends reality with surrealism, emphasizing contemplative storytelling and innovative visuals that challenge traditional narrative forms.
+
+🔄 Testing system prompt: EXPERT
+✅ Valid JSON: Yes
+✅ 3 movies: Yes
+✅ Complete fields: Yes
+📊 Score: 100.00%
+🎭 Recommended movies:
+  1. The Mirror (1975) (Arthouse Drama + Experimental Narrative)
+     Reason: This Tarkovsky masterpiece is a profound meditation on memory, identity, and the passage of time, employing poetic visuals and non-linear storytelling that challenge traditional narrative forms. It invites viewers into a dreamlike space where personal and universal histories intertwine, making it an essential vessel for exploring existential themes through visionary cinema.
+  2. Sátántangó (1994) (Post-Communist Gothic + Long-Form Narrative)
+     Reason: László Nemes's sprawling, hypnotic epic redefines pacing and storytelling, with a slow-burning, atmospheric approach that immerses viewers in the bleak, surreal fabric of rural Hungary. Its meticulous cinematography and layered symbolism evoke Bergman’s introspection while embracing a distinctive, almost ritualistic rhythm that transforms the act of watching into a meditative experience.
+  3. Uncle Boonmee Who Can Recall His Past Lives (2010) (Contemporary Surrealism + Asian Auteurism)
+     Reason: Weerasethakul’s nuanced blending of reality and myth creates a hypnotic film that explores mortality, reincarnation, and spiritual interconnectedness through lush visuals and subtle, poetic storytelling. It complements your interest in filmmakers who dissolve boundaries between the tangible and the metaphysical, offering a transcendent journey that deepens with each viewing, echoing Tarkovsky’s spiritual inquiry.
+
+🔄 Testing system prompt: CONTEXTUAL

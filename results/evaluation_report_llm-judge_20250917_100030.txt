@@ -1,0 +1,485 @@
+🤖 Using LLM-AS-JUDGE evaluation with OpenAI API
+🎯 One model generates recommendations, another model judges quality
+
+🤖 LLM-AS-JUDGE EVALUATION
+======================================================================
+🎯 Using one model to generate recommendations, another to judge quality
+
+
+📝 USER INPUT 1: As a serious cinephile with a background in film studies, I'm seeking arthouse cinema that challenges conventional narrative structures. Films that employ innovative cinematography, explore existential themes, and demonstrate auteur vision. Think Tarkovsky's Solaris, Bergman meditations, or contemporary directors like Apichatpong Weerasethakul who blend reality with surrealism
+------------------------------------------------------------
+
+🔄 System prompt: DETAILED
+  📄 Generated response: {
+  "movies": [
+    {
+      "title": "Stalker",
+      "genre": "Science Fiction / Philosophical Drama",
+      "reason": "Directed by Andrei Tarkovsky, this film exemplifies experimental narrative structure and deep existential inquiry, aligning perfectly with your appreciation for Tarkovsky's meditative style and innovative cinematography."
+    },
+    {
+      "title": "The Mirror",
+      "genre": "Autobiographical Art Film",
+      "reason": "Bergman's poetic and non-linear approach to storytelling is captured here, offering a profound exploration of memory, identity, and the subconscious, resonating with your interest in auteur-driven meditative cinema."
+    },
+    {
+      "title": "Uncle Boonmee Who Can Recall His Past Lives",
+      "genre": "Surrealist Drama / Magical Realism",
+      "reason": "Directed by Apichatpong Weerasethakul, this film masterfully blurs reality and surrealism, employing lush cinematography and layered narratives that challenge conventional storytelling, which aligns with your appreciation for contemporary experimental cinema."
+    }
+  ]
+}
+  ⏱️  Response time: 3.73s
+  🤖 Judge evaluation: 0.85
+  📝 Detailed reasoning: This recommendation set demonstrates a commendable understanding of the user's preferences for challenging, auteur-driven arthouse cinema that employs innovative narrative and visual techniques. The three films—*Stalker*, *The Mirror*, and *Uncle Boonmee*—are all highly relevant choices that exemplify the qualities the user seeks: Tarkovsky’s meditative and philosophically rich approach, Bergman’s poetic and non-linear exploration of memory and identity, and Weerasethakul’s surreal, layered narratives that blend reality with mysticism. The explanations are specific, insightful, and show a nuanced grasp of each director’s style and thematic concerns, going beyond superficial descriptions to connect the films’ artistic qualities with the user’s interests.
+
+However, while the recommendations are well-chosen and the reasoning demonstrates depth, there is room for improvement in personalization. The explanations, though insightful, tend to rely on broad characterizations of the directors’ styles rather than explicitly tying each film’s particular narrative or cinematic techniques to the user’s specific criteria—such as their interest in innovative cinematography or the exploration of existential themes. For instance, mentioning Tarkovsky’s use of long takes or Bergman’s use of symbolism would have elevated the reasoning further. Additionally, the JSON structure is correct, with exactly three movies and appropriate fields, fulfilling the structural criteria.
+
+Overall, this set reflects a high level of film knowledge and thoughtful curation, but it could be even more tailored and detailed in explaining how each film uniquely aligns with the user’s nuanced preferences. Therefore, I assign a score of 0.85.
+--------------------------------------------------------------------------------
+
+🔄 System prompt: BASIC
+  📄 Generated response: {
+  "movies": [
+    {
+      "title": "Stalker",
+      "genre": "Science Fiction / Philosophical Drama",
+      "reason": "Directed by Tarkovsky, this film explores existential themes through poetic visuals and a non-linear narrative, perfectly aligning with your interest in challenging conventional storytelling."
+    },
+    {
+      "title": "Persona",
+      "genre": "Psychological Drama / Art Film",
+      "reason": "Bergman's meditation on identity and communication employs innovative cinematography and deep philosophical inquiry, embodying auteur vision and introspective exploration."
+    },
+    {
+      "title": "Uncle Boonmee Who Can Recall His Past Lives",
+      "genre": "Mystical Realism / Surrealism",
+      "reason": "Directed by Apichatpong Weerasethakul, this film blurs reality and surrealism with poetic imagery and explores spiritual themes, fitting your criteria for innovative and meditative arthouse cinema."
+    }
+  ]
+}
+  ⏱️  Response time: 5.10s
+  🤖 Judge evaluation: 0.85
+  📝 Detailed reasoning: This set of recommendations demonstrates a commendable understanding of the user's nuanced preferences for challenging, auteur-driven arthouse cinema that emphasizes innovative visuals, existential themes, and experimental narrative forms. The three films—*Stalker*, *Persona*, and *Uncle Boonmee*—are all exemplary choices that align well with the specified criteria, and the reasoning provided is insightful and specific.
+
+*Stalker* by Tarkovsky is a quintessential recommendation; it embodies poetic visuals, non-linear storytelling, and profound philosophical inquiry, all hallmarks of challenging narrative structures. The explanation correctly emphasizes its existential themes and visual poetry, showing a deep appreciation for Tarkovsky’s auteur vision. *Persona* by Bergman is another excellent choice, with its innovative cinematography and exploration of identity, aligning with the user's interest in meditative, introspective films that push conventional boundaries. The reasoning captures the film’s philosophical depth and artistic significance, indicating a solid understanding of Bergman’s auteur approach.
+
+*Uncle Boonmee* by Apichatpong Weerasethakul is a fitting contemporary addition, blending surrealism with spiritual themes and poetic imagery, which resonates with the user’s interest in blending reality with surrealism and exploring meditative, innovative cinema. The explanation correctly highlights its poetic imagery and thematic depth.
+
+However, despite the strong alignment and insightful reasoning, the score is not a perfect 1.0 because the recommendations, while excellent, could be slightly more personalized and nuanced. For instance, the reasoning could delve deeper into how these films specifically challenge narrative conventions beyond their thematic content—such as Tarkovsky’s use of long takes and spiritual symbolism, Bergman’s use of minimalism and psychological space, or Weerasethakul’s blending of documentary and fiction. Additionally, the JSON structure is correct, and all three movies are relevant, but the explanations, while good, tend to be somewhat standard and could benefit from more unique insights or connections to the user’s specific cinephile background.
+
+In sum, this recommendation set is highly relevant, well-reasoned, and demonstrates a strong understanding of the user’s preferences, meriting a high score. Slight room for improvement in depth and personalization prevents a perfect score, but overall, it is an outstanding effort.
+--------------------------------------------------------------------------------
+
+🔄 System prompt: EXPERT
+  📄 Generated response: {
+  "movies": [
+    {
+      "title": "Stalker (1979)",
+      "genre": "Science Fiction + Philosophical Meditation",
+      "reason": "This Tarkovsky masterpiece plunges into the depths of human desire and existential longing through its poetic imagery and elusive narrative. It masterfully blurs the line between reality and metaphysical exploration, inviting viewers into a contemplative space that echoes your appreciation for Solaris and Bergman’s introspective meditations."
+    },
+    {
+      "title": "Uncle Boonmee Who Can Recall His Past Lives (2010)",
+      "genre": "Surrealist Drama + Cultural Mysticism",
+      "reason": "Weerasethakul's hypnotic blending of memory, spirituality, and the surreal creates an immersive experience that defies conventional storytelling. Its hypnotic pacing and layered symbolism resonate with your interest in directors who challenge perception, offering a meditative journey into the fluidity of existence and consciousness."
+    },
+    {
+      "title": "The Act of Killing (2012)",
+      "genre": "Documentary + Surrealist Reenactment",
+      "reason": "This groundbreaking film reimagines the act of documentary through surreal reenactments, confronting moral ambiguity and historical trauma with inventive visual storytelling. It pushes the boundaries of narrative structure, much like the pioneering works you admire, transforming documentary into a profound visual essay on memory, guilt, and history."
+    }
+  ]
+}
+  ⏱️  Response time: 23.94s
+  🤖 Judge evaluation: 0.55
+  📝 Detailed reasoning: The recommendations demonstrate a superficial understanding of the user's preferences, with some notable issues that prevent a higher score. While the films selected—*Stalker*, *Uncle Boonmee*, and *The Act of Killing*—are all thematically aligned with challenging narrative structures, existential themes, and auteur-driven visions, the reasoning provided is overly generic and lacks the nuanced insight expected at a high level of critique. 
+
+*Stalker* is indeed a quintessential Tarkovsky film that explores metaphysical longing through poetic imagery, aligning well with the user's interest in philosophical meditations and innovative cinematography. However, the reasoning simplifies its thematic depth, reducing it to "poetic imagery and elusive narrative" without engaging with Tarkovsky's unique use of time, spiritual symbolism, or his meditative pacing that truly challenge conventional storytelling. The mention of Solaris as a comparable film is appropriate but somewhat superficial, lacking a deeper analysis of Tarkovsky's auteur signature or how *Stalker* specifically pushes narrative boundaries.
+
+*Uncle Boonmee* is a strong choice, as Weerasethakul's work indeed embodies surrealism, spirituality, and a meditative approach that resonates with the user's desire for directors who blend reality and surrealism. Nonetheless, the explanation remains at a surface level—"hypnotic blending," "layered symbolism," and "fluidity of existence"—without delving into how Weerasethakul's use of long takes, non-linear memory sequences, or his subtle engagement with Thai cultural mysticism exemplify a truly innovative, challenging arthouse cinema. The reasoning could be enriched by discussing how his narrative structure defies Western linearity or how his visual style creates a contemplative space.
+
+*The Act of Killing* is an intriguing inclusion, as it indeed reimagines documentary form through surreal reenactments, confronting moral and historical issues innovatively. However, the explanation again remains broad—"groundbreaking," "visual storytelling," "boundary-pushing"—without specific insights into how the film's surreal reenactments serve as a critique of memory and guilt, or how its experimental approach challenges documentary conventions in a way that aligns with the user's interest in avant-garde, auteur-driven works.
+
+Overall, the JSON structure is correct, and the three films are relevant choices, but the reasoning lacks the depth, specificity, and filmic insight that would elevate this recommendation to an outstanding level. The explanations are somewhat formulaic and do not demonstrate a nuanced understanding
+--------------------------------------------------------------------------------
+
+🔄 System prompt: CONTEXTUAL
+  📄 Generated response: {
+  "movies": [
+    {
+      "title": "Stalker",
+      "genre": "Science Fiction / Philosophical Drama",
+      "reason": "Directed by Tarkovsky himself, 'Stalker' is a mesmerizing exploration of human desire and existential longing, employing long takes and poetic imagery that challenge traditional storytelling. It’s a profound meditative experience that aligns perfectly with your love for auteur-driven, visually inventive cinema."
+    },
+    {
+      "title": "Beau Travail",
+      "genre": "Drama / Art Film",
+      "reason": "Claire Denis’s 'Beau Travail' captivates with its minimalist narrative and stunning cinematography, using movement and silence to evoke themes of masculinity and existential alienation. It’s a compelling example of how form and mood can transcend conventional storytelling—ideal for a cinephile seeking depth and innovation."
+    },
+    {
+      "title": "Uncle Boonmee Who Can Recall His Past Lives",
+      "genre": "Fantasy / Surrealism / Contemporary Art Film",
+      "reason": "From Apichatpong Weerasethakul, this film masterfully blurs reality and dreams through lush visuals and a meditative pace, exploring themes of memory, reincarnation, and spiritual interconnectedness. It’s a poetic journey that beautifully embodies the surreal and contemplative spirit you cherish in arthouse cinema."
+    }
+  ]
+}
+  ⏱️  Response time: 23.35s
+  🤖 Judge evaluation: 0.85
+  📝 Detailed reasoning: This recommendation set demonstrates a commendable understanding of the user's preferences for challenging, auteur-driven arthouse cinema that emphasizes innovative visuals, existential themes, and a blending of reality and surrealism. The three selected films—*Stalker*, *Beau Travail*, and *Uncle Boonmee*—are all exemplary in their respective domains, aligning well with the user's desire for films that push narrative boundaries and explore profound philosophical questions.
+
+The reasoning provided is specific and insightful, highlighting key cinematic qualities such as Tarkovsky’s poetic imagery and meditative pacing, Claire Denis’s minimalist yet emotionally resonant approach to form and mood, and Weerasethakul’s blending of surrealism with spiritual themes. These explanations go beyond superficial descriptions, demonstrating a nuanced understanding of each director’s auteur signature and how these films embody the qualities the user seeks.
+
+However, there is room for improvement. While the recommendations are highly relevant and the reasoning is strong, the selection could be slightly more diverse in terms of thematic exploration or cinematic techniques to showcase a broader spectrum of arthouse innovation. Additionally, the explanations, though insightful, could delve deeper into specific cinematic techniques (e.g., Tarkovsky’s use of long takes and naturalistic lighting, Denis’s use of silence and framing, Weerasethakul’s use of slow pacing and natural imagery) to demonstrate even more film literacy.
+
+The JSON structure is correct, with all three movies included and well-formulated reasons. The recommendations are personalized and show a clear effort to match the user’s nuanced preferences, making this a very high-quality response. Given the strict criteria, this set earns a score of 0.85, reflecting its excellence but acknowledging that it could be even more detailed and diverse in its insights.
+--------------------------------------------------------------------------------
+
+🔄 System prompt: CREATIVE
+  📄 Generated response: {
+  "movies": [
+    {
+      "title": "Stalker (1979) - Precise and Authoritative",
+      "genre": "Existential Sci-Fi + Surrealist Journey",
+      "reason": "This film's haunting landscapes and ambiguous narrative act as a mirror to Tarkovsky's Solaris, immersing the viewer in a contemplative space where reality dissolves into metaphysical inquiry. It serves as a portal into the soul's uncharted territories, resonating with your desire for meditative and innovative cinema that challenges linear storytelling."
+    },
+    {
+      "title": "Uncle Boonmee Who Can Recall His Past Lives (2010) - Precise and Authoritative",
+      "genre": "Magical Realism + Temporal Meditation",
+      "reason": "Weerasethakul's masterpiece weaves the surreal with the spiritual, echoing Bergman's introspective tone but through a lush, tactile lens that blurs the boundaries of reality and memory. It expands the cosmic dialogue initiated by Tarkovsky, inviting you into a universe where life, death, and rebirth intertwine in a hypnotic dance."
+    },
+    {
+      "title": "Eternal Sunshine of the Spotless Mind (2004) - Precise and Authoritative",
+      "genre": "Psychological Drama + Nonlinear Dreamscape",
+      "reason": "While seemingly rooted in romantic narrative, this film's disjointed structure and inventive cinematography embody a deeper existential inquiry into memory and identity. It acts as a modern counterpoint to the meditative traditions you cherish, transforming personal loss into a surreal voyage through the mind’s labyrinth."
+    }
+  ]
+}
+  ⏱️  Response time: 3.05s
+  🤖 Judge evaluation: 0.55
+  📝 Detailed reasoning: This recommendation set demonstrates a superficial understanding of your preferences, with some relevant choices but a lack of nuanced insight and depth. "Stalker" is an excellent match, aligning well with your interest in Tarkovsky's meditative, metaphysical cinema, and the reasoning appropriately emphasizes its contemplative landscapes and narrative ambiguity. "Uncle Boonmee" similarly resonates with your appreciation for surreal, spiritual films that challenge linear storytelling, and the explanation correctly highlights its blending of reality and memory, echoing Bergman’s introspective tone. 
+
+However, the third film, "Eternal Sunshine of the Spotless Mind," is a problematic inclusion. While it employs nonlinear storytelling and explores themes of memory and identity, it is fundamentally rooted in mainstream romantic drama with a focus on personal relationships rather than the avant-garde, existential, or auteur-driven cinema you seek. The reasoning attempts to frame it as a "modern counterpoint" to meditative traditions, but this is a stretch that borders on superficiality. It lacks the innovative cinematography or thematic depth characteristic of the films you prefer, and its inclusion feels more like a generic attempt to cover the theme of memory rather than a deliberate, insightful recommendation.
+
+Furthermore, the JSON structure is correct, and all three movies are relevant to your preferences, but the explanations, while decent for "Stalker" and "Uncle Boonmee," do not demonstrate the level of film expertise or nuanced understanding expected at a higher score. The recommendations are somewhat formulaic and lack the creative depth that would elevate this set into the "outstanding" range. Overall, it shows effort but falls short of the deep personalization and insightful reasoning that would justify a higher score.
+--------------------------------------------------------------------------------
+
+📝 USER INPUT 2: Hey, I'm just chilling on the couch and want something fun to watch with my friends. Nothing too heavy or complicated - maybe some mindless action, comedy, or those feel-good movies that make you laugh and forget about the week. Bonus if it's got great one-liners or epic fight scenes!
+------------------------------------------------------------
+
+🔄 System prompt: DETAILED
+  📄 Generated response: {
+  "movies": [
+    {
+      "title": "Guardians of the Galaxy",
+      "genre": "Action/Comedy",
+      "reason": "This film is perfect for a relaxed movie night with friends, offering a fun mix of humor, memorable one-liners, and exciting space action scenes that will keep everyone entertained without requiring much thought."
+    },
+    {
+      "title": "Deadpool",
+      "genre": "Comedy/Action",
+      "reason": "Known for its witty humor, sharp one-liners, and over-the-top fight scenes, Deadpool combines comic book action with hilarious moments that are great for a laid-back, fun viewing experience with friends."
+    },
+    {
+      "title": "The Hangover",
+      "genre": "Comedy",
+      "reason": "This feel-good comedy delivers plenty of laughs, ridiculous situations, and quotable lines, making it an ideal choice for a lighthearted movie night where everyone can just relax and enjoy the humor."
+    }
+  ]
+}
+  ⏱️  Response time: 2.72s
+  🤖 Judge evaluation: 0.65
+  📝 Detailed reasoning: The recommendations are generally aligned with the user's desire for light, fun, and accessible movies suitable for a casual group setting, and the explanations touch on key aspects like humor, action, and quotability. However, the reasoning remains somewhat superficial and lacks the depth and nuance expected of truly insightful film recommendations. For instance, "Guardians of the Galaxy" is indeed a lively, humorous space adventure with memorable one-liners, fitting the user's mood, but the explanation doesn't acknowledge its specific appeal to fans of character-driven humor or its blend of retro soundtrack and vibrant visuals that elevate its feel-good factor. "Deadpool" is correctly identified as witty and over-the-top, but the reasoning overlooks its meta-humor and self-awareness, which are central to its appeal and distinguish it from more generic action comedies. "The Hangover" is a classic choice for a carefree night, yet the explanation misses the film's particular style of raunchy humor and its cultural impact, which contribute to its status as a quintessential "funny and ridiculous" comedy.
+
+Furthermore, the recommendations are somewhat predictable and lack any surprising or personalized insights that would elevate them beyond standard suggestions. The JSON structure is correct, and all three movies are relevant to the user's preferences, but the reasons do not demonstrate a deep understanding of the films' nuances or how they uniquely cater to the user's specific mood and context. The explanations could benefit from more specific references to scenes, humor styles, or thematic elements that resonate with the user's desire for "mindless fun" and "great one-liners." Overall, while the recommendations are appropriate and reasonably justified, they fall short of the depth, creativity, and personalized insight that would warrant a higher score.
+--------------------------------------------------------------------------------
+
+🔄 System prompt: BASIC
+  📄 Generated response: {
+  "movies": [
+    {
+      "title": "Guardians of the Galaxy",
+      "genre": "Action/Comedy",
+      "reason": "A fun-filled space adventure with hilarious one-liners and epic battles that will keep everyone entertained."
+    },
+    {
+      "title": "The Hangover",
+      "genre": "Comedy",
+      "reason": "A riotous comedy with memorable moments and plenty of laughs, perfect for a light-hearted movie night."
+    },
+    {
+      "title": "Deadpool",
+      "genre": "Action/Comedy",
+      "reason": "A wildly funny superhero film packed with sharp wit, great one-liners, and over-the-top action scenes."
+    }
+  ]
+}
+  ⏱️  Response time: 23.66s
+  🤖 Judge evaluation: 0.55
+  📝 Detailed reasoning: This recommendation set demonstrates a basic understanding of the user's desire for light, fun, and humorous movies suitable for a casual, friends' movie night. The three films—*Guardians of the Galaxy*, *The Hangover*, and *Deadpool*—are indeed popular choices that fit the broad category of "mindless action, comedy, or feel-good movies," and they all feature humor, memorable lines, and entertaining action sequences. However, the reasoning provided is superficial and lacks depth; it relies on generic descriptors like "hilarious one-liners" and "plenty of laughs" without delving into what makes each film uniquely suited to the user's preferences or exploring nuanced aspects such as tone, style, or specific elements that would elevate the recommendations beyond surface-level matches.
+
+Furthermore, the explanations do not demonstrate a sophisticated understanding of the films' nuances or how they align with the user's desire for "nothing too heavy or complicated." For example, *Guardians of the Galaxy* is a space adventure with a quirky tone, but it also contains emotional depth and character development that might not be ideal for someone seeking purely mindless entertainment. Similarly, *The Hangover* is a raunchy comedy that might not appeal to all groups, especially if the user prefers more universally light-hearted fare. *Deadpool* is a meta, satirical superhero film that, while funny, contains mature themes and humor that could be considered slightly edgier than the user might want.
+
+The JSON structure is correct, and all three movies are relevant to the user's preferences, but the reasoning lacks specificity, film expertise, and personalized insight. It reads as a generic list rather than a curated, thoughtful selection. The explanations could be improved by discussing the films' pacing, humor style, or how their tone aligns with a relaxed, casual movie night, which would demonstrate a deeper understanding of the user's nuanced preferences.
+
+Overall, the recommendations are relevant but lack the depth, insight, and personalized reasoning that would elevate this to a higher score. They are serviceable but not exceptional, warranting a modest score of 0.55.
+--------------------------------------------------------------------------------
+
+🔄 System prompt: EXPERT
+  📄 Generated response: {
+  "movies": [
+    {
+      "title": "Guardians of the Galaxy (2014)",
+      "genre": "Sci-Fi Action + Comedy",
+      "reason": "This film is a perfect blend of irreverent humor, catchy soundtrack, and high-energy action that effortlessly lifts spirits. Its witty banter and memorable one-liners make it an ideal choice for a carefree, fun-filled movie night that keeps everyone laughing and engaged."
+    },
+    {
+      "title": "The Nice Guys (2016)",
+      "genre": "Comedy + Action Noir",
+      "reason": "With sharp humor, unexpected twists, and charismatic performances, this film offers a playful take on buddy cop adventures. Its hilarious dialogue and comedic chemistry create a lighthearted atmosphere, encouraging spontaneous laughter and a relaxed vibe among friends."
+    },
+    {
+      "title": "Kingsman: The Secret Service (2014)",
+      "genre": "Action + Spy Comedy",
+      "reason": "This movie delivers stylish, over-the-top action sequences paired with clever humor and memorable one-liners that elevate the fun. It’s a rollicking ride that combines epic fight scenes with a tongue-in-cheek tone, perfect for unwinding and just enjoying the spectacle."
+    }
+  ]
+}
+  ⏱️  Response time: 43.45s
+  🤖 Judge evaluation: 0.65
+  📝 Detailed reasoning: The recommendations demonstrate a basic understanding of the user's desire for light, fun, and humorous movies suitable for a casual group setting. All three films—*Guardians of the Galaxy (2014)*, *The Nice Guys (2016)*, and *Kingsman: The Secret Service (2014)*—are generally aligned with the user's preference for action, comedy, and feel-good entertainment with memorable lines and entertaining fight scenes. The explanations touch on key elements like humor, action, and quotability, which are relevant to the user's criteria.
+
+However, the reasoning remains somewhat superficial and formulaic. While it correctly identifies the movies as fun and energetic, it lacks depth in analyzing how each film uniquely caters to the user's specific mood—"nothing too heavy or complicated"—or how they might appeal to a broad group of friends beyond surface-level traits. For example, *Guardians* is noted for its humor and soundtrack, but the explanation doesn't delve into how its irreverent tone and ensemble cast specifically make it a quintessential "chill" pick. Similarly, *The Nice Guys* is described as having "sharp humor" and "playful" elements, but there's little discussion of its pacing or tone that would make it particularly suitable for a relaxed, fun night. *Kingsman* is characterized as stylish and over-the-top, yet the reasoning doesn't explore whether its humor and action are accessible enough for a casual, non-genre-savvy audience.
+
+The JSON structure is correct, and all three movies are relevant choices, but the explanations lack nuanced film knowledge or creative insight that would elevate this beyond a generic list. The recommendations are somewhat predictable and don't show a deep understanding of the subtle qualities that make these movies ideal for the specified mood. They also don't consider alternative options that might be more unexpected or perfectly tailored, such as classic comedies or light-hearted ensemble films.
+
+In sum, while the recommendations are relevant and reasonably justified, they fall short of a high standard of personalized, insightful critique. They are competent but lack the depth, creativity, and nuanced understanding expected for a score above 0.7.
+--------------------------------------------------------------------------------
+
+🔄 System prompt: CONTEXTUAL
+  📄 Generated response: {
+  "movies": [
+    {
+      "title": "Guardians of the Galaxy",
+      "genre": "Action/Comedy",
+      "reason": "This film is a perfect blend of hilarious one-liners, epic space battles, and lovable characters that will have everyone laughing and cheering. It’s a feel-good adventure that’s light, fun, and guaranteed to make your couch session a blast!"
+    },
+    {
+      "title": "Kingsman: The Secret Service",
+      "genre": "Action/Comedy",
+      "reason": "If you love slick fight scenes, witty banter, and a cool, stylish vibe, this movie delivers all that with a fun twist. It’s a perfect pick for a laid-back night with friends — exciting, funny, and full of memorable quotes!"
+    },
+    {
+      "title": "The Nice Guys",
+      "genre": "Comedy/Action",
+      "reason": "Starring Ryan Gosling and Russell Crowe, this film is a hilarious buddy comedy with sharp humor, great chemistry, and plenty of laugh-out-loud moments. Plus, those classic one-liners and quirky action scenes make it a great movie to just kick back and enjoy!"
+    }
+  ]
+}
+  ⏱️  Response time: 2.62s
+  🤖 Judge evaluation: 0.55
+  📝 Detailed reasoning: This set of recommendations demonstrates a superficial understanding of the user's preferences, which emphasize casual, lighthearted entertainment with humor, action, and memorable one-liners suitable for a relaxed, fun night with friends. While all three movies—*Guardians of the Galaxy*, *Kingsman: The Secret Service*, and *The Nice Guys*—are generally aligned with the "fun, action-comedy" vibe, the reasoning provided is overly generic and lacks depth. The explanations rely heavily on broad, cliché descriptors like "hilarious one-liners" and "epic fight scenes" without delving into what makes each film uniquely suited to the user's specific desire for "mindless" entertainment that is "not too heavy or complicated." 
+
+Furthermore, the recommendations do not sufficiently differentiate themselves in terms of nuance or film expertise. For example, *Guardians of the Galaxy* is indeed a feel-good space adventure with humor, but the reasoning fails to acknowledge its particular blend of retro pop culture references and character-driven comedy that elevates it beyond standard action-comedy fare. *Kingsman* is noted for its stylish action and witty banter, but the explanation misses the opportunity to highlight its satirical edge or how its over-the-top fight scenes serve as pure escapism. *The Nice Guys* is a solid buddy comedy, but the reasoning doesn't explore its noir parody elements or Ryan Gosling's comedic timing that make it stand out in the genre.
+
+The JSON structure is correct, and all three movies are relevant choices, but the explanations are shallow and lack personalized insight. They read as generic marketing pitches rather than critical, film-savvy justifications. The recommendations could be improved by suggesting lesser-known gems with similar tones or by explaining how these films specifically match the user's desire for "mindless fun" with "great one-liners" and "epic fight scenes"—perhaps referencing specific scenes or stylistic choices.
+
+Overall, the recommendations are relevant but lack the depth, specificity, and nuanced understanding expected of a top-tier, personalized film critique. They are more like surface-level suggestions than truly tailored, insightful recommendations.
+--------------------------------------------------------------------------------
+
+🔄 System prompt: CREATIVE
+  📄 Generated response: {
+  "movies": [
+    {
+      "title": "Guardians of the Galaxy (2014) - Precise and Authoritative",
+      "genre": "Sci-Fi Action + Comedy and Heartfelt Humor",
+      "reason": "This film is a cosmic playground where irreverent humor and flashy action collide like shooting stars in a carefree universe. Its witty banter and memorable one-liners serve as a musical score to your relaxed evening, transforming simple escapism into a vibrant celebration of friendship amidst chaos. It’s the perfect gateway to forget the week with a burst of color and laughter."
+    },
+    {
+      "title": "The Nice Guys (2016) - Precise and Authoritative",
+      "genre": "Buddy Comedy + Noir Paradox and Sharp Wit",
+      "reason": "In this noir-infused comedy, the absurdity of a mismatched duo navigating Los Angeles' underbelly becomes a mirror for the joy of spontaneous chaos and awkward camaraderie. Its clever dialogue and unexpectedly brutal fight scenes are a paradoxical blend that keeps the mood light yet thrilling, elevating mindless fun into a smart, laughter-filled escapade that surprises at every turn."
+    },
+    {
+      "title": "Scott Pilgrim vs. the World (2010) - Precise and Authoritative",
+      "genre": "Comic Book Fantasy + Quirky Visuals and Epic Showdowns",
+      "reason": "This film is a kaleidoscope of pop culture and indie spirit, where love and self-discovery are fought over with video game-style battles. Its punchy one-liners and hyper-stylized action scenes craft a universe where the absurd becomes epic, making it a fitting crescendo for a night of carefree, laugh-out-loud entertainment that leaves you energized and smiling."
+    }
+  ]
+}
+  ⏱️  Response time: 24.11s
+  🤖 Judge evaluation: 0.75
+  📝 Detailed reasoning: The recommendations are generally relevant and align well with the user's desire for light, fun, and accessible entertainment suitable for a casual, social viewing experience. Each film fits within the broad categories of comedy, action, or feel-good movies, and the explanations demonstrate a decent understanding of the movies' appeal to a relaxed audience. However, the reasoning, while insightful at times, tends to lean on surface-level descriptions rather than deeply nuanced film analysis. For example, describing "Guardians of the Galaxy" as a "cosmic playground" with "witty banter" is accurate but somewhat generic; it doesn't fully explore how its character dynamics or specific comedic timing elevate it beyond typical space adventures. Similarly, "The Nice Guys" is characterized as a "paradoxical blend" of chaos and wit, which is a good start, but the explanation could delve deeper into how its noir elements and sharp dialogue create a unique comedic rhythm that appeals to viewers seeking more than just mindless fun. "Scott Pilgrim" is well-captured as a visually energetic and pop-culture-rich film, but the reasoning could better articulate how its stylized visuals and meta-humor serve as a perfect escapism for a casual, laughter-focused night. 
+
+The JSON structure is correct, with all three movies included and reasons provided, but the explanations lack the depth and specificity that would elevate this recommendation to an outstanding level. The recommendations are appropriate but do not demonstrate exceptional film knowledge or creative insight, which is necessary for a score above 0.8. Overall, this set is solid and relevant but falls short of the nuanced, deeply personalized, and creatively insightful recommendations that would warrant a higher score.
+--------------------------------------------------------------------------------
+
+📝 USER INPUT 3: I'm obsessed with the golden age of Hollywood musicals from the 1940s-1960s. Specifically, I'm looking for MGM Technicolor extravaganzas with elaborate dance numbers, big orchestral scores, and those incredible production values. Think Fred Astaire/Ginger Rogers, elaborate Busby Berkeley sequences, and that unmistakable Hollywood glamour
+------------------------------------------------------------
+
+🔄 System prompt: DETAILED
+  📄 Generated response: {
+  "movies": [
+    {
+      "title": "An American in Paris",
+      "genre": "Musical",
+      "reason": "This classic MGM musical features stunning Technicolor visuals, elaborate dance sequences reminiscent of the golden era, and a sweeping orchestral score that captures Hollywood glamour at its finest. The choreography and production values make it a perfect match for your obsession with elaborate dance numbers and lavish visuals."
+    },
+    {
+      "title": "Singin' in the Rain",
+      "genre": "Musical",
+      "reason": "Arguably the quintessential Hollywood musical, it showcases iconic dance routines, vibrant Technicolor cinematography, and a nostalgic look at the golden age of Hollywood. Its big production numbers and memorable songs embody the lavishness and charm you love from MGM musicals."
+    },
+    {
+      "title": "The Band Wagon",
+      "genre": "Musical",
+      "reason": "This MGM classic is renowned for its sophisticated choreography, intricate dance sequences, and opulent production design. It features the star power and glamour of Hollywood’s golden age, along with witty, elaborate musical numbers that align perfectly with your taste for extravagance and cinematic artistry."
+    }
+  ]
+}
+  ⏱️  Response time: 22.65s
+  🤖 Judge evaluation: 0.85
+  📝 Detailed reasoning: This recommendation set demonstrates a strong understanding of the user's specific preferences for MGM Technicolor musicals from the 1940s-1960s, emphasizing elaborate dance routines, lush production values, and Hollywood glamour. All three films—*An American in Paris*, *Singin' in the Rain*, and *The Band Wagon*—are quintessential examples of the era, each renowned for their vibrant visuals, intricate choreography, and orchestral scores that epitomize the lavishness the user seeks. The explanations are detailed and show a solid grasp of the films' qualities, highlighting their relevance to the user's obsession with the golden age of Hollywood musicals.
+
+However, there are some notable shortcomings. While *An American in Paris* is a classic MGM musical with Technicolor and dance sequences, it is more associated with Gene Kelly's choreography and Parisian setting than the quintessential MGM Hollywood glamour and Busby Berkeley-style extravagance. The film's focus on ballet and its somewhat more subdued production design make it slightly less aligned with the "Hollywood extravaganza" vibe than the other two. *Singin' in the Rain* is indeed a perfect fit, but the reasoning could delve deeper into its production design, set pieces, and how it exemplifies MGM's musical grandeur beyond just the dance routines. *The Band Wagon* is an excellent choice, but the explanation could better emphasize its sophisticated choreography and the film's meta-commentary on Hollywood musical production, which would resonate more with a connoisseur's appreciation.
+
+Overall, the recommendations are highly relevant, and the reasoning is insightful, showing a good understanding of the films' qualities. The JSON structure is correct, and all three movies are appropriate choices. The score reflects a high level of relevance and reasoning, though slight improvements in nuanced understanding and deeper film knowledge could push it toward a perfect score.
+--------------------------------------------------------------------------------
+
+🔄 System prompt: BASIC
+  📄 Generated response: {
+  "movies": [
+    {
+      "title": "Singin' in the Rain",
+      "genre": "Musical",
+      "reason": "A quintessential Hollywood musical with stunning Technicolor visuals, elaborate dance routines, and a delightful portrayal of the transition to sound films."
+    },
+    {
+      "title": "The Band Wagon",
+      "genre": "Musical",
+      "reason": "Featuring spectacular production numbers and the glamour of 1950s MGM, it showcases incredible choreography and lush visuals, perfect for fans of classic Hollywood extravaganzas."
+    },
+    {
+      "title": "An American in Paris",
+      "genre": "Musical",
+      "reason": "A vibrant Technicolor musical with grand dance sequences, lush orchestral scores, and the quintessential romantic Hollywood atmosphere reminiscent of the golden age."
+    }
+  ]
+}
+  ⏱️  Response time: 23.39s
+  🤖 Judge evaluation: 0.55
+  📝 Detailed reasoning: This recommendation set demonstrates a basic understanding of the user's core interest in classic Hollywood musicals, particularly those with Technicolor visuals, elaborate dance routines, and MGM-style production values. "Singin' in the Rain" is an excellent choice, as it epitomizes the golden age musical with its iconic dance sequences and Technicolor cinematography, aligning well with the user's preferences. "The Band Wagon" also fits reasonably well, showcasing MGM's lavish production and choreography, though it leans slightly into the 1950s rather than the 1940s-1960s window specified, and its style is somewhat more theatrical and less "glamorous" in the traditional Hollywood sense. "An American in Paris" is a vibrant, colorful musical with grand dance numbers and lush orchestration, but it is a French production, not an MGM film, and its style is more European and artistic rather than the quintessential Hollywood glamour the user seeks.
+
+The reasoning provided is somewhat superficial; it mentions visual and musical qualities but lacks nuanced insight into the specific era, studio, or the distinctive style of Busby Berkeley or Fred Astaire/Ginger Rogers. The recommendations do not sufficiently differentiate between the different eras or studios, nor do they address the elaborate production numbers characteristic of MGM musicals from the 1940s-1960s specifically. Furthermore, "An American in Paris" is not an MGM film, which is a significant oversight given the user's emphasis on MGM Technicolor extravaganzas. The explanations are somewhat generic, and while they touch on relevant qualities, they do not demonstrate a deep film knowledge or personalized understanding of the user's precise preferences.
+
+Overall, the recommendations are relevant but lack depth, specificity, and a nuanced understanding of the golden age Hollywood musical style the user desires. They are decent suggestions but fall short of the high standards expected for a score above 0.7.
+--------------------------------------------------------------------------------
+
+🔄 System prompt: EXPERT
+  📄 Generated response: {
+  "movies": [
+    {
+      "title": "An American in Paris (1951)",
+      "genre": "Musical + Post-War Optimism",
+      "reason": "This film captures the glorious Technicolor vibrancy and sweeping orchestral scores that define MGM's golden age, immersing viewers in a world of romantic fantasy and artistic innovation. The stunning dance sequences, choreographed by Gene Kelly himself, evoke a sense of hope and rediscovery after wartime, making it a quintessential cinematic celebration of glamour and artistry."
+    },
+    {
+      "title": "The Band Wagon (1953)",
+      "genre": "Musical + Broadway Elegance",
+      "reason": "A masterclass in theatricality and visual spectacle, this film offers lavish production numbers and witty storytelling that showcase MGM's legendary craftsmanship. Its elaborate choreography and opulent sets serve as a love letter to Hollywood's golden era, inviting viewers into a world where glamour meets inventive spectacle, revealing the artistry behind the magic of musicals."
+    },
+    {
+      "title": "Meet Me in St. Louis (1944)",
+      "genre": "Musical + Nostalgic Americana",
+      "reason": "This film beautifully blends heartfelt storytelling with sumptuous visuals and memorable melodies, epitomizing MGM’s golden age charm. Its iconic 'The Trolley Song' and 'Have Yourself a Merry Little Christmas' are set within a lush, color-drenched backdrop that celebrates innocence, family, and the timeless allure of Hollywood’s musical magic, providing a perfect emotional and visual crescendo to your journey."
+    }
+  ]
+}
+  ⏱️  Response time: 43.64s
+  🤖 Judge evaluation: 0.65
+  📝 Detailed reasoning: This recommendation set demonstrates a decent understanding of the user’s core preferences—specifically, MGM Technicolor musicals from the 1940s-1960s with elaborate dance routines, lush production values, and Hollywood glamour. The three films selected—*An American in Paris* (1951), *The Band Wagon* (1953), and *Meet Me in St. Louis* (1944)—are all iconic MGM musicals that fit within the broader golden age of Hollywood musical cinema, and each features notable production elements aligned with the user’s interests.
+
+However, the reasoning, while generally relevant, lacks the depth and specificity that would elevate this to an outstanding recommendation. For instance, *An American in Paris* is indeed a Technicolor MGM musical with impressive dance sequences, but it is more associated with post-war European influence and Gene Kelly’s choreography rather than the quintessential MGM extravaganza with Busby Berkeley-style elaborate numbers. The mention of "romantic fantasy and artistic innovation" is somewhat generic and does not explicitly connect to the user’s desire for the most elaborate, spectacle-driven MGM productions.
+
+*The Band Wagon* is a strong choice, with its lavish production numbers and theatrical flair, and the reasoning correctly emphasizes its craftsmanship and spectacle. Yet, it is more Broadway-centric and less representative of the classic MGM Technicolor extravaganza with the big orchestral scores and elaborate dance routines that the user explicitly seeks. It’s a good recommendation but slightly misses the mark in emphasizing MGM’s signature style over other studio influences.
+
+*Meet Me in St. Louis* is a beloved classic, but it leans more toward nostalgic Americana and heartfelt storytelling than the elaborate dance numbers or the Technicolor spectacle the user desires. While it does feature memorable songs and lush visuals, it is not as representative of the MGM musical extravaganza with big production numbers and Hollywood glamour as the other two.
+
+Overall, the recommendations are relevant but somewhat superficial in their reasoning. They do not sufficiently highlight the specific production elements—such as Busby Berkeley’s elaborate choreography, the grandeur of MGM’s set design, or the lush orchestral scores—that are central to the user’s preferences. The JSON structure is correct, and the three movies are appropriate choices, but the explanations lack the nuanced insight and film expertise that would justify a higher score. Therefore, I assign a 0.65, recognizing the relevance but noting the need for deeper, more personalized reasoning and a stronger focus on the specific stylistic elements
+--------------------------------------------------------------------------------
+
+🔄 System prompt: CONTEXTUAL
+  📄 Generated response: {
+  "movies": [
+    {
+      "title": "Singin' in the Rain",
+      "genre": "Musical",
+      "reason": "This classic is the quintessential Hollywood musical with dazzling Technicolor, unforgettable dance numbers, and the charm of Gene Kelly and Debbie Reynolds. It perfectly captures the golden age glamour and the transition from silent films to talkies—an absolute must for fans of elaborate choreography and big orchestral scores!"
+    },
+    {
+      "title": "An American in Paris",
+      "genre": "Musical",
+      "reason": "Starring Gene Kelly in a visually stunning, color-filled Parisian backdrop, this film is a feast of sweeping dance sequences and lush visuals. Its romantic and vibrant spirit embodies the glamour and grandeur you love, with incredible production values and memorable musical numbers."
+    },
+    {
+      "title": "The Band Wagon",
+      "genre": "Musical",
+      "reason": "This MGM gem is packed with spectacular dance routines, witty humor, and opulent production design. Featuring Fred Astaire, it’s a showcase of classic Hollywood elegance and inventive choreography—perfect for anyone obsessed with the golden era’s big-scale musical spectacle!"
+    }
+  ]
+}
+  ⏱️  Response time: 2.67s
+  🤖 Judge evaluation: 0.75
+  📝 Detailed reasoning: The recommendations demonstrate a solid understanding of the user's core preferences—specifically, MGM Technicolor musicals from the 1940s-1960s with elaborate dance routines, lush visuals, and Hollywood glamour. "Singin' in the Rain" is an iconic choice, epitomizing the golden age musical with its Technicolor splendor, inventive choreography, and historical significance, aligning well with the user's desire for elaborate dance numbers and big orchestral scores. "An American in Paris" also fits nicely, showcasing Gene Kelly’s dance mastery in a vibrant, color-rich setting that captures the glamour and grandeur of the era, though it leans more toward romantic spectacle than the pure MGM extravaganza the user emphasizes. "The Band Wagon" is a quintessential MGM musical with opulent production design and inventive choreography, and its inclusion of Fred Astaire adds to the classic Hollywood appeal.
+
+However, despite these strengths, the recommendations lack some depth and nuance. The explanations, while accurate, are somewhat generic and could benefit from more specific insights—such as mentioning Busby Berkeley's influence on elaborate production numbers, or highlighting particular sequences that exemplify the era's grandeur. The user’s preference for "Ginger Rogers" and "Busby Berkeley sequences" is not explicitly addressed; for instance, none of these films feature Berkeley's signature kaleidoscopic choreography, which is a key aspect of the user's obsession. Additionally, the recommendations omit other quintessential MGM musicals like "Meet Me in St. Louis" or "Easter Parade," which are also emblematic of the era's glamour and elaborate production values, and could have enriched the personalization.
+
+The JSON structure is correct, and all three movies are relevant and well-known examples of the genre, but the reasoning could be more insightful and tailored. The recommendations are good but not exceptional—they show familiarity but lack the deep, nuanced understanding that would elevate this to an outstanding or perfect score. They are solid choices for someone obsessed with the golden age of Hollywood musicals, but they do not push beyond surface-level matching or demonstrate a particularly creative or expert-level insight into the genre's nuances.
+
+In sum, this is a very good set of recommendations with appropriate explanations, but it falls short of the highest standards due to a lack of deeper, more personalized insights and missed opportunities to include more specific references to the user’s detailed preferences.
+--------------------------------------------------------------------------------
+
+🔄 System prompt: CREATIVE
+  📄 Generated response: {
+  "movies": [
+    {
+      "title": "Singin' in the Rain (1952) - Precise and Authoritative",
+      "genre": "Classic Hollywood Musical + Spectacular Technicolor & Innovative Choreography",
+      "reason": "This film is the quintessential embodiment of MGM's golden era, weaving groundbreaking dance sequences with a shimmering Technicolor palette that feels like a living dream. It captures the glittering Hollywood glamour and inventive staging that elevate the genre into high art, serving as a luminous gateway to your obsession with elaborate productions."
+    },
+    {
+      "title": "The Band Wagon (1953) - Precise and Authoritative",
+      "genre": "Meticulous Studio-Backed Musical + Paradoxical Intimacy & Spectacle",
+      "reason": "In its dazzling, lavish numbers, this film reveals the magic behind the curtains—where the grandeur of MGM meets a playful self-awareness that challenges traditional notions of spectacle. It expands your universe by blending the opulence of dance with a witty, meta-commentary on performance itself, deepening your appreciation for the art form’s theatrical roots."
+    },
+    {
+      "title": "An American in Paris (1951) - Precise and Authoritative",
+      "genre": "Romantic Ballet-Infused Musical + Artistic Fusion of Classical and Cinematic Language",
+      "reason": "This film elevates the Hollywood musical to a form of cinematic ballet, where lush visuals and sweeping orchestral scores fuse seamlessly with dance as a narrative language. It synthesizes the glamour and grandeur of your preferred era into a poetic exploration of love and artistry, culminating the trilogy as a shimmering ode to the golden age’s artistic dreams."
+    }
+  ]
+}
+  ⏱️  Response time: 23.91s
+  🤖 Judge evaluation: 0.85
+  📝 Detailed reasoning: This recommendation set demonstrates a commendable understanding of the user's specific obsession with MGM Technicolor musicals from the 1940s-1960s, emphasizing elaborate dance numbers, big orchestral scores, and Hollywood glamour. The three films—*Singin' in the Rain* (1952), *The Band Wagon* (1953), and *An American in Paris* (1951)—are all iconic examples of the era, each representing different facets of the golden age musical: *Singin' in the Rain* as the quintessential MGM Technicolor spectacle with innovative choreography; *The Band Wagon* as a lavish, self-aware studio musical that balances spectacle with wit; and *An American in Paris* as a ballet-infused musical that elevates dance to an art form, blending classical and cinematic language. 
+
+The explanations are insightful and specific, highlighting the Technicolor brilliance, elaborate staging, and production values that align with the user's preferences. The reasons go beyond surface-level descriptions, touching on the artistic and technical achievements that define the era's glamour and spectacle. For instance, describing *Singin' in the Rain* as "a shimmering Technicolor palette that feels like a living dream" and *An American in Paris* as "a cinematic ballet" shows a nuanced appreciation of their artistic qualities.
+
+However, while the recommendations are highly relevant and well-justified, they lack some depth in exploring lesser-known or more nuanced aspects of these films' production design, choreography, or cultural significance that could elevate the recommendations further. Additionally, the JSON structure is correct, and all three movies are appropriate choices, fulfilling the completeness criterion.
+
+Overall, this set reflects a deep understanding of the user's preferences, with personalized, insightful reasoning that demonstrates film expertise. It could be improved by including more unexpected or less mainstream suggestions within the same aesthetic, but as it stands, it is a very strong, well-justified recommendation.
+--------------------------------------------------------------------------------
+
+========================================================================================================================
+🏆 COMPREHENSIVE EVALUATION RESULTS - LLM-AS-JUDGE ANALYSIS WITH PERFORMANCE METRICS
+========================================================================================================================
+⚠️ Skipping detailed - no evaluation scores collected
+⚠️ Skipping basic - no evaluation scores collected
+⚠️ Skipping expert - no evaluation scores collected
+⚠️ Skipping contextual - no evaluation scores collected
+⚠️ Skipping creative - no evaluation scores collected
+
+❌ ERROR: No system prompts had successful evaluations. Cannot determine winner.
+This might be due to API errors, rate limiting, or other issues during evaluation.
+
+✨ LLM-JUDGE evaluation completed with OpenAI API!
